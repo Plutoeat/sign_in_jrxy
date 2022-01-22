@@ -4,6 +4,15 @@
       "url": "https://static.campushoy.com/apicache/tenantListSort",
       "sectionName": "D",
       "name": "大连大学"
+    },
+    "getSchoolLoginUrl": {
+      "url": "https://mobile.campushoy.com/v6/config/guest/tenant/list"
+    },
+    "login": {
+      "host": "dlu.campusphere.net",
+      "service": "https://mobile.campushoy.com/v6/auth/campus/cas/login",
+      "username": "18402064",
+      "password": "Qq18402064"
     }
   }
 }

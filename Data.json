@@ -1,9 +1,9 @@
 {
   "data": {
-    "findUrl": {
-      "staticUrl": "http://static.campushoy.com/apicache/tenantListSort",
-      "sectionName": "Q",
-      "name": "清华大学"
+    "getSchoolId": {
+      "url": "https://static.campushoy.com/apicache/tenantListSort",
+      "sectionName": "D",
+      "name": "大连大学"
     }
   }
 }

@@ -5,13 +5,14 @@
 # @version  : 1.0
 import base64
 import json
+import os
 import uuid
 import oss2
 import pyDes
 import requests
 
 from Config import logger
-
+os.environ['NO_PROXY'] = 'campusphere.net'
 with open('config/config.json', 'r', encoding='utf-8') as f:
     dc_form = json.load(f)['data']['form']
 with open('config/config.json', 'r', encoding='utf-8') as f:
@@ -36,19 +37,21 @@ class Login:
             "deviceId": str(uuid.uuid4()),
             "systemName": "未来操作系统",
             "userId": "5201314",
-            "appVersion": "8.1.13",
+            "appVersion": "9.0.16",
             "model": "红星一号量子计算机",
-            "lon": 0.0,
+            "lon": 104.622818,
             "systemVersion": "初号机",
-            "lat": 0.0
+            "lat": 30.12702,
+            "version": "first_v3",
+            "calVersion": "firstv"
         }
-        logger.info('解密: 开始解密')
+        logger.info('加密: 开始加密')
         self.session.headers.update(
             {"Cpdaily-Extension": self.encrypt(json.dumps(extension))})
-        logger.info('解密: 成功解密')
+        logger.info('加密: 成功加密')
         logger.info('登录: 成功初始化网络会话')
 
-    # 解密
+    # 加密
     def encrypt(self, text):
         try:
             k = pyDes.des(self.key, pyDes.CBC, b"\x01\x02\x03\x04\x05\x06\x07\x08",
@@ -217,23 +220,22 @@ class Login:
         data = {
             "formWid": formWid,
             "collectWid": collectWid,
-            "schoolTaskWid": schoolTaskWid,
             "form": form,
             "address": address,
-            # "uaIsCpadaily": True,
-            # 'latitude': 116.765862,
-            # 'longitude': 36.207341
+            "schoolTaskWid": schoolTaskWid,
+            "uaIsCpadaily": True,
+            'latitude': 104.622818,
+            'longitude': 36.12702
         }
         ret = self.request(
             "https://{host}/wec-counselor-collector-apps/stu/collector/submitForm", data)
-        print(ret["message"])
-        return ret["message"] == "SUCCESS"
+        if ret["message"] == "SUCCESS":
+            return True
+        return False
 
     def autocomplete(self, address):
         logger.info('提交表单: 获取最新表单')
         collectList = self.getcollectorlist()
-        # 注释掉
-        print(collectList)
         collectWid = collectList[0]['wid']
         formWid = collectList[0]['formWid']
         instanceWid = collectList[0]['instanceWid']
@@ -242,13 +244,12 @@ class Login:
         schoolTaskWid = detailcollector['datas']['collector']['schoolTaskWid']
         logger.info('提交表单: 获取表单')
         form = self.queryform(
-            data={"pageSize": "9999", "pageNumber": "1", "formWid": formWid, "collectorWid": collectWid})
+            data={"pageSize": "9999", "pageNumber": "1", "formWid": formWid, "collectorWid": collectWid, "instanceWid": instanceWid})
         logger.info('填写新表单')
         new_form = self.fillform(form)
-        print(new_form)
         logger.info("提交表单: 提交表单")
-        logger.debug("提交表单: 提交表单出现错误,作者君正在修复复")
-        exit(-2)
+        logger.debug("正在处理新版本今日校园")
+        exit(-1)
         flag = self.submitform(formWid, collectWid, schoolTaskWid, new_form, address)
         if flag:
             # todo 告知签到成功
@@ -261,8 +262,8 @@ class Login:
 def run():
     # 今日校园获取id的接口有连接限制，这里直接写上学校登录地址
     from sign_in.getSchoolLoginUrl import run02
-    data = run02()
-    # data = {'ampUrl': 'https://dlu.campusphere.net/wec-portal-mobile/client', 'host': 'dlu.campusphere.net'}
+    # data = run02()
+    data = {'ampUrl': 'https://dlu.campusphere.net/wec-portal-mobile/client', 'host': 'dlu.campusphere.net'}
     app = Login(data)
     logger.info('登录: 开始准备登录')
     if not app.login():

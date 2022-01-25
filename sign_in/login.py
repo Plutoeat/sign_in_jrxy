@@ -4,12 +4,15 @@
 # @time     : 2022/1/23 8:58
 # @version  : 1.0
 import base64
+import hashlib
 import json
 import os
+from urllib import parse
 import uuid
 import oss2
 import pyDes
 import requests
+from Crypto.Cipher import AES
 
 from Config import logger
 os.environ['NO_PROXY'] = 'campusphere.net'
@@ -17,13 +20,21 @@ with open('config/config.json', 'r', encoding='utf-8') as f:
     dc_form = json.load(f)['data']['form']
 with open('config/config.json', 'r', encoding='utf-8') as f:
     address = json.load(f)['data']['login']['address']
+user = json.load(open('config/config.json', 'r', encoding='utf-8'))['data']['login']
+username = user['username']
+password = user['password']
+lon = user['lon']
+lat = user['lat']
 
 
 class Login:
-    def __init__(self, data):
+    def __init__(self, data, charset='utf-8'):
         # 这key应该是逆向出来的
         logger.info('登录: 正在初始化网络会话')
-        self.key = "b3L26XNL"
+        self.key = "XCE927=="
+        self.bodyString_key = b"SASEoK4Pa5d4SssO"
+        self.sign_key="SASEoK4Pa5d4SssO"
+        self.charset = charset
         self.session = requests.session()
         self.host = data['host']
         self.loginUrl = data['ampUrl']
@@ -32,18 +43,16 @@ class Login:
             "Pragma": "no-cache",
             "Accept": "application/json, text/plain, */*",
         })
-        # 大佬的配置咱也不知到他是干哈的，也不敢乱改
+        # 哈哈哈
         extension = {
             "deviceId": str(uuid.uuid4()),
             "systemName": "未来操作系统",
             "userId": "5201314",
             "appVersion": "9.0.16",
             "model": "红星一号量子计算机",
-            "lon": 104.622818,
+            "lon": lon,
             "systemVersion": "初号机",
-            "lat": 30.12702,
-            "version": "first_v3",
-            "calVersion": "firstv"
+            "lat": lat,
         }
         logger.info('加密: 开始加密')
         self.session.headers.update(
@@ -88,9 +97,6 @@ class Login:
     # 登录
     def login(self, captcha=""):
         logger.info("登录: 正在获取用户配置信息")
-        user = json.load(open('config/config.json', 'r', encoding='utf-8'))['data']['login']
-        username = user['username']
-        password = user['password']
         logger.info("登录: 成功获取用户配置信息")
         self.session.headers.update({"X-Requested-With": "XMLHttpRequest"})
         logger.info("登录: 正在获取参数")
@@ -152,10 +158,10 @@ class Login:
                     # TODO 发送邮件
                     exit(-1)
                 # 文本直接赋值
-                if formItem['fieldType'] == 1:
+                if formItem['fieldType'] == '1':
                     formItem['value'] = default['value']
                 # 单选框需要删掉多余的选项
-                if formItem['fieldType'] == 2:
+                if formItem['fieldType'] == '2':
                     # 填充默认值,现在不必填写默认值
                     # formItem['value'] = default['value']
                     fieldItems = formItem['fieldItems']
@@ -164,8 +170,10 @@ class Login:
                             fieldItems[i]['isSelected'] = 1
                             if fieldItems[i]['content'] == '其他':
                                 fieldItems[i]['contentExtend'] = default['ex_value']
+                        else:
+                            formItem['fieldItems'].remove(fieldItems[i])
                 # 多选需要分割默认选项值，并且删掉无用的其他选项
-                if formItem['fieldType'] == 3:
+                if formItem['fieldType'] == '3':
                     logger.INFO('作者没有遇见过第三种fieldType,支持可能并不友好')
                     fieldItems = formItem['fieldItems']
                     defaultValues = default['value'].split(',')
@@ -179,13 +187,20 @@ class Login:
                         if flag:
                             del fieldItems[i]
                 # 图片需要上传到阿里云oss
-                if formItem['fieldType'] == 4:
+                if formItem['fieldType'] == '4':
                     logger.INFO('作者没有遇见过第四种fieldType,支持可能并不友好')
                     fileName = self.uploadpicture(default['value'])
                     formItem['value'] = self.getpictureurl(fileName)
                 logger.info('必填问题%d：' % sort + formItem['title'])
                 logger.info('答案%d：' % sort + formItem['value'])
                 sort += 1
+            else:
+                if formItem['fieldType'] == '2':
+                    # 填充默认值,现在不必填写默认值
+                    # formItem['value'] = default['value']
+                    fieldItems = formItem['fieldItems']
+                    for i in range(0, len(fieldItems))[::-1]:
+                        formItem['fieldItems'].remove(fieldItems[i])
         return form
 
     # 上传图片到阿里云oss
@@ -216,20 +231,104 @@ class Login:
         photoUrl = res.json().get('datas')
         return photoUrl
 
-    def submitform(self, formWid, collectWid, schoolTaskWid, form, address):
-        data = {
+    def pkcs7padding(self, text: str):
+        """明文使用PKCS7填充"""
+        remainder = 16 - len(text.encode(self.charset)) % 16
+        return str(text + chr(remainder) * remainder)
+
+    def encrypt_BodyString(self, text):
+        """BodyString加密"""
+        iv = b'\x01\x02\x03\x04\x05\x06\x07\x08\t\x01\x02\x03\x04\x05\x06\x07'
+        cipher = AES.new(self.bodyString_key, AES.MODE_CBC, iv)
+
+        text = self. pkcs7padding(text)  # 填充
+        text = text.encode(self.charset)  # 编码
+        text = cipher.encrypt(text)  # 加密
+        text = base64.b64encode(text).decode(self.charset)  # Base64编码
+        return text
+
+    def geneHashObj(self, hash_type):
+        if hash_type == 1:
+            return hashlib.sha1()
+        elif hash_type == 224:
+            return hashlib.sha224()
+        elif hash_type == 256:
+            return hashlib.sha256()
+        elif hash_type == 384:
+            return hashlib.sha384()
+        elif hash_type == 512:
+            return hashlib.sha512()
+        elif hash_type == 5:
+            return hashlib.md5()
+        elif hash_type == 3.224:
+            return hashlib.sha3_224()
+        elif hash_type == 3.256:
+            return hashlib.sha3_256()
+        elif hash_type == 3.384:
+            return hashlib.sha3_384()
+        elif hash_type == 3.512:
+            return hashlib.sha3_512()
+        else:
+            raise Exception('类型错误, 初始化失败')
+
+    def strHash(self, str_: str, hash_type):
+        """计算字符串哈希
+        :param str_: 字符串
+        :param hash_type: 哈希算法类型
+        :param charset: 字符编码类型
+            1       sha-1
+            224     sha-224
+            256      sha-256
+            384     sha-384
+            512     sha-512
+            5       md5
+            3.256   sha3-256
+            3.384   sha3-384
+            3.512   sha3-512
+        """
+        hashObj = self.geneHashObj(hash_type)
+        bstr = str_.encode(self.charset)
+        hashObj.update(bstr)
+        return hashObj.hexdigest()
+
+    def signAbstract(self, submitData: dict):
+        '''表单中sign项目生成'''
+        abstractKey = ["appVersion", "bodyString", "deviceId", "lat",
+                       "lon", "model", "systemName", "systemVersion", "userId"]
+        abstractSubmitData = {k: submitData[k] for k in abstractKey}
+        abstract = parse.urlencode(abstractSubmitData) + '&' + self.sign_key
+        abstract_md5 = self.strHash(abstract, 5)
+        return abstract_md5
+
+    def submitform(self, formWid, collectWid, schoolTaskWid, form, instanceWid, address):
+        rel_form = {
             "formWid": formWid,
             "collectWid": collectWid,
             "form": form,
             "address": address,
             "schoolTaskWid": schoolTaskWid,
             "uaIsCpadaily": True,
-            'latitude': 104.622818,
-            'longitude': 36.12702
+            'latitude': lat,
+            'longitude': lon,
+            'instanceWid': instanceWid
         }
-        ret = self.request(
+        data = {
+            "lon": "104.622818",
+            "version": "first_v3",
+            "calVersion": "firstv",
+            "deviceId": str(uuid.uuid4()),
+            "userId": username,
+            "systemName": "iPadOS",
+            "bodyString": self.encrypt_BodyString(json.dumps(rel_form)),
+            "lat": "36.12702",
+            "systemVersion": "15.2.1",
+            "appVersion": "9.0.16",
+            "model": "iPad13,4",
+        }
+        data['sign'] = self.signAbstract(data)
+        res = self.request(
             "https://{host}/wec-counselor-collector-apps/stu/collector/submitForm", data)
-        if ret["message"] == "SUCCESS":
+        if res["message"] == "SUCCESS":
             return True
         return False
 
@@ -248,9 +347,7 @@ class Login:
         logger.info('填写新表单')
         new_form = self.fillform(form)
         logger.info("提交表单: 提交表单")
-        logger.debug("正在处理新版本今日校园")
-        exit(-1)
-        flag = self.submitform(formWid, collectWid, schoolTaskWid, new_form, address)
+        flag = self.submitform(formWid, collectWid, schoolTaskWid, new_form, instanceWid, address)
         if flag:
             # todo 告知签到成功
             logger.info('打卡成功')

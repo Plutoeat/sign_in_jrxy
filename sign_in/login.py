@@ -359,8 +359,8 @@ class Login:
 def run():
     # 今日校园获取id的接口有连接限制，这里直接写上学校登录地址
     from sign_in.getSchoolLoginUrl import run02
-    # data = run02()
-    data = {'ampUrl': 'https://dlu.campusphere.net/wec-portal-mobile/client', 'host': 'dlu.campusphere.net'}
+    data = run02()
+    # data = {'ampUrl': 'https://dlu.campusphere.net/wec-portal-mobile/client', 'host': 'dlu.campusphere.net'}
     app = Login(data)
     logger.info('登录: 开始准备登录')
     if not app.login():

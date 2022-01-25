@@ -21,6 +21,8 @@ if __name__ == '__main__':
     print(school_name)
     username = input('请输入你的学号(仅支持学号): ')
     password = input('请输入你的密码: ')
+    lon = input('请输入你所在地的经度: ')
+    lat = input('请输入你所在地的维度: ')
     address = input('请输入你的地址: ')
     form_list = []
     flag = 1
@@ -51,6 +53,8 @@ if __name__ == '__main__':
             "login": {
                 "username": "{}".format(username),
                 "password": "{}".format(password),
+                "lon": "{}".format(lon),
+                "lat": "{}".format(lat),
                 "address": "{}".format(address)
             },
             "rem_form": False,

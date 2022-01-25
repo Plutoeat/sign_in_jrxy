@@ -1480,3 +1480,898 @@
 [Mon, 24 Jan 2022 17:50:11][login.py][line:187][INFO] 答案13：
 [Mon, 24 Jan 2022 17:50:11][login.py][line:249][INFO] 提交表单: 提交表单
 [Mon, 24 Jan 2022 17:50:11][login.py][line:256][DEBUG] 打卡失败,请重试
+[Tue, 25 Jan 2022 08:29:09][login.py][line:25][INFO] 登录: 正在初始化网络会话
+[Tue, 25 Jan 2022 08:29:09][login.py][line:48][INFO] 加密: 开始加密
+[Tue, 25 Jan 2022 08:29:09][login.py][line:51][INFO] 加密: 成功加密
+[Tue, 25 Jan 2022 08:29:09][login.py][line:52][INFO] 登录: 成功初始化网络会话
+[Tue, 25 Jan 2022 08:29:09][login.py][line:268][INFO] 登录: 开始准备登录
+[Tue, 25 Jan 2022 08:29:09][login.py][line:90][INFO] 登录: 正在获取用户配置信息
+[Tue, 25 Jan 2022 08:29:09][login.py][line:94][INFO] 登录: 成功获取用户配置信息
+[Tue, 25 Jan 2022 08:29:09][login.py][line:96][INFO] 登录: 正在获取参数
+[Tue, 25 Jan 2022 08:29:10][login.py][line:100][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 08:29:10][login.py][line:101][INFO] 登录: 正在获取新的参数
+[Tue, 25 Jan 2022 08:29:10][login.py][line:104][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 08:29:10][login.py][line:114][INFO] 登录: 正在登录
+[Tue, 25 Jan 2022 08:29:11][login.py][line:118][INFO] 登录成功
+[Tue, 25 Jan 2022 08:29:11][login.py][line:237][INFO] 提交表单: 获取最新表单
+[Tue, 25 Jan 2022 08:29:11][login.py][line:242][INFO] 提交表单: 获取学校Taskid
+[Tue, 25 Jan 2022 08:29:11][login.py][line:245][INFO] 提交表单: 获取表单
+[Tue, 25 Jan 2022 08:29:12][login.py][line:248][INFO] 填写新表单
+[Tue, 25 Jan 2022 08:29:12][login.py][line:186][INFO] 必填问题1：你的学生类别？
+[Tue, 25 Jan 2022 08:29:12][login.py][line:187][INFO] 答案1：
+[Tue, 25 Jan 2022 08:29:12][login.py][line:186][INFO] 必填问题2：你属于下列哪个校区学生?
+[Tue, 25 Jan 2022 08:29:12][login.py][line:187][INFO] 答案2：
+[Tue, 25 Jan 2022 08:29:12][login.py][line:186][INFO] 必填问题3：你目前是否在校？
+[Tue, 25 Jan 2022 08:29:12][login.py][line:187][INFO] 答案3：
+[Tue, 25 Jan 2022 08:29:12][login.py][line:186][INFO] 必填问题4：你目前的居住地区是否为疫情中高风险地区？
+[Tue, 25 Jan 2022 08:29:12][login.py][line:187][INFO] 答案4：
+[Tue, 25 Jan 2022 08:29:12][login.py][line:186][INFO] 必填问题5：你目前是否有疑似/确诊新冠肺炎？
+[Tue, 25 Jan 2022 08:29:12][login.py][line:187][INFO] 答案5：
+[Tue, 25 Jan 2022 08:29:12][login.py][line:186][INFO] 必填问题6：你目前是否有发热、咳嗽等症状?
+[Tue, 25 Jan 2022 08:29:12][login.py][line:187][INFO] 答案6：
+[Tue, 25 Jan 2022 08:29:12][login.py][line:186][INFO] 必填问题7：你目前是否已就诊或正在住院?
+[Tue, 25 Jan 2022 08:29:12][login.py][line:187][INFO] 答案7：
+[Tue, 25 Jan 2022 08:29:12][login.py][line:186][INFO] 必填问题8：你目前是否被隔离？
+[Tue, 25 Jan 2022 08:29:12][login.py][line:187][INFO] 答案8：
+[Tue, 25 Jan 2022 08:29:12][login.py][line:186][INFO] 必填问题9：近1个月是否去过重点疫区或接触过重点疫区人士？
+[Tue, 25 Jan 2022 08:29:12][login.py][line:187][INFO] 答案9：
+[Tue, 25 Jan 2022 08:29:12][login.py][line:186][INFO] 必填问题10：近1个月是否接触过确诊病例？
+[Tue, 25 Jan 2022 08:29:12][login.py][line:187][INFO] 答案10：
+[Tue, 25 Jan 2022 08:29:12][login.py][line:186][INFO] 必填问题11：近1个月是否接触过疑似病例？
+[Tue, 25 Jan 2022 08:29:12][login.py][line:187][INFO] 答案11：
+[Tue, 25 Jan 2022 08:29:12][login.py][line:186][INFO] 必填问题12：你今天的体温是多少？
+[Tue, 25 Jan 2022 08:29:12][login.py][line:187][INFO] 答案12：
+[Tue, 25 Jan 2022 08:29:12][login.py][line:186][INFO] 必填问题13：本人是否承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处 (必填)
+[Tue, 25 Jan 2022 08:29:12][login.py][line:187][INFO] 答案13：
+[Tue, 25 Jan 2022 08:29:12][login.py][line:250][INFO] 提交表单: 提交表单
+[Tue, 25 Jan 2022 08:29:12][login.py][line:251][DEBUG] 正在处理新版本今日校园
+[Tue, 25 Jan 2022 08:29:39][login.py][line:25][INFO] 登录: 正在初始化网络会话
+[Tue, 25 Jan 2022 08:29:39][login.py][line:48][INFO] 加密: 开始加密
+[Tue, 25 Jan 2022 08:29:39][login.py][line:51][INFO] 加密: 成功加密
+[Tue, 25 Jan 2022 08:29:39][login.py][line:52][INFO] 登录: 成功初始化网络会话
+[Tue, 25 Jan 2022 08:29:39][login.py][line:268][INFO] 登录: 开始准备登录
+[Tue, 25 Jan 2022 08:29:39][login.py][line:90][INFO] 登录: 正在获取用户配置信息
+[Tue, 25 Jan 2022 08:29:39][login.py][line:94][INFO] 登录: 成功获取用户配置信息
+[Tue, 25 Jan 2022 08:29:39][login.py][line:96][INFO] 登录: 正在获取参数
+[Tue, 25 Jan 2022 08:29:40][login.py][line:100][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 08:29:40][login.py][line:101][INFO] 登录: 正在获取新的参数
+[Tue, 25 Jan 2022 08:29:40][login.py][line:104][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 08:29:40][login.py][line:114][INFO] 登录: 正在登录
+[Tue, 25 Jan 2022 08:29:40][login.py][line:118][INFO] 登录成功
+[Tue, 25 Jan 2022 08:29:40][login.py][line:237][INFO] 提交表单: 获取最新表单
+[Tue, 25 Jan 2022 08:29:40][login.py][line:242][INFO] 提交表单: 获取学校Taskid
+[Tue, 25 Jan 2022 08:29:40][login.py][line:245][INFO] 提交表单: 获取表单
+[Tue, 25 Jan 2022 08:29:40][login.py][line:248][INFO] 填写新表单
+[Tue, 25 Jan 2022 08:29:40][login.py][line:186][INFO] 必填问题1：你的学生类别？
+[Tue, 25 Jan 2022 08:29:40][login.py][line:187][INFO] 答案1：
+[Tue, 25 Jan 2022 08:29:40][login.py][line:186][INFO] 必填问题2：你属于下列哪个校区学生?
+[Tue, 25 Jan 2022 08:29:40][login.py][line:187][INFO] 答案2：
+[Tue, 25 Jan 2022 08:29:40][login.py][line:186][INFO] 必填问题3：你目前是否在校？
+[Tue, 25 Jan 2022 08:29:40][login.py][line:187][INFO] 答案3：
+[Tue, 25 Jan 2022 08:29:40][login.py][line:186][INFO] 必填问题4：你目前的居住地区是否为疫情中高风险地区？
+[Tue, 25 Jan 2022 08:29:40][login.py][line:187][INFO] 答案4：
+[Tue, 25 Jan 2022 08:29:40][login.py][line:186][INFO] 必填问题5：你目前是否有疑似/确诊新冠肺炎？
+[Tue, 25 Jan 2022 08:29:40][login.py][line:187][INFO] 答案5：
+[Tue, 25 Jan 2022 08:29:40][login.py][line:186][INFO] 必填问题6：你目前是否有发热、咳嗽等症状?
+[Tue, 25 Jan 2022 08:29:40][login.py][line:187][INFO] 答案6：
+[Tue, 25 Jan 2022 08:29:40][login.py][line:186][INFO] 必填问题7：你目前是否已就诊或正在住院?
+[Tue, 25 Jan 2022 08:29:40][login.py][line:187][INFO] 答案7：
+[Tue, 25 Jan 2022 08:29:40][login.py][line:186][INFO] 必填问题8：你目前是否被隔离？
+[Tue, 25 Jan 2022 08:29:40][login.py][line:187][INFO] 答案8：
+[Tue, 25 Jan 2022 08:29:40][login.py][line:186][INFO] 必填问题9：近1个月是否去过重点疫区或接触过重点疫区人士？
+[Tue, 25 Jan 2022 08:29:40][login.py][line:187][INFO] 答案9：
+[Tue, 25 Jan 2022 08:29:40][login.py][line:186][INFO] 必填问题10：近1个月是否接触过确诊病例？
+[Tue, 25 Jan 2022 08:29:40][login.py][line:187][INFO] 答案10：
+[Tue, 25 Jan 2022 08:29:40][login.py][line:186][INFO] 必填问题11：近1个月是否接触过疑似病例？
+[Tue, 25 Jan 2022 08:29:40][login.py][line:187][INFO] 答案11：
+[Tue, 25 Jan 2022 08:29:40][login.py][line:186][INFO] 必填问题12：你今天的体温是多少？
+[Tue, 25 Jan 2022 08:29:40][login.py][line:187][INFO] 答案12：
+[Tue, 25 Jan 2022 08:29:40][login.py][line:186][INFO] 必填问题13：本人是否承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处 (必填)
+[Tue, 25 Jan 2022 08:29:40][login.py][line:187][INFO] 答案13：
+[Tue, 25 Jan 2022 08:29:40][login.py][line:250][INFO] 提交表单: 提交表单
+[Tue, 25 Jan 2022 08:29:41][login.py][line:259][DEBUG] 打卡失败,请重试
+[Tue, 25 Jan 2022 08:30:33][login.py][line:25][INFO] 登录: 正在初始化网络会话
+[Tue, 25 Jan 2022 08:30:33][login.py][line:48][INFO] 加密: 开始加密
+[Tue, 25 Jan 2022 08:30:33][login.py][line:51][INFO] 加密: 成功加密
+[Tue, 25 Jan 2022 08:30:33][login.py][line:52][INFO] 登录: 成功初始化网络会话
+[Tue, 25 Jan 2022 08:30:33][login.py][line:269][INFO] 登录: 开始准备登录
+[Tue, 25 Jan 2022 08:30:33][login.py][line:90][INFO] 登录: 正在获取用户配置信息
+[Tue, 25 Jan 2022 08:30:33][login.py][line:94][INFO] 登录: 成功获取用户配置信息
+[Tue, 25 Jan 2022 08:30:33][login.py][line:96][INFO] 登录: 正在获取参数
+[Tue, 25 Jan 2022 08:30:34][login.py][line:100][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 08:30:34][login.py][line:101][INFO] 登录: 正在获取新的参数
+[Tue, 25 Jan 2022 08:30:34][login.py][line:104][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 08:30:34][login.py][line:114][INFO] 登录: 正在登录
+[Tue, 25 Jan 2022 08:30:34][login.py][line:118][INFO] 登录成功
+[Tue, 25 Jan 2022 08:30:34][login.py][line:238][INFO] 提交表单: 获取最新表单
+[Tue, 25 Jan 2022 08:30:34][login.py][line:243][INFO] 提交表单: 获取学校Taskid
+[Tue, 25 Jan 2022 08:30:35][login.py][line:246][INFO] 提交表单: 获取表单
+[Tue, 25 Jan 2022 08:30:35][login.py][line:249][INFO] 填写新表单
+[Tue, 25 Jan 2022 08:30:35][login.py][line:186][INFO] 必填问题1：你的学生类别？
+[Tue, 25 Jan 2022 08:30:35][login.py][line:187][INFO] 答案1：
+[Tue, 25 Jan 2022 08:30:35][login.py][line:186][INFO] 必填问题2：你属于下列哪个校区学生?
+[Tue, 25 Jan 2022 08:30:35][login.py][line:187][INFO] 答案2：
+[Tue, 25 Jan 2022 08:30:35][login.py][line:186][INFO] 必填问题3：你目前是否在校？
+[Tue, 25 Jan 2022 08:30:35][login.py][line:187][INFO] 答案3：
+[Tue, 25 Jan 2022 08:30:35][login.py][line:186][INFO] 必填问题4：你目前的居住地区是否为疫情中高风险地区？
+[Tue, 25 Jan 2022 08:30:35][login.py][line:187][INFO] 答案4：
+[Tue, 25 Jan 2022 08:30:35][login.py][line:186][INFO] 必填问题5：你目前是否有疑似/确诊新冠肺炎？
+[Tue, 25 Jan 2022 08:30:35][login.py][line:187][INFO] 答案5：
+[Tue, 25 Jan 2022 08:30:35][login.py][line:186][INFO] 必填问题6：你目前是否有发热、咳嗽等症状?
+[Tue, 25 Jan 2022 08:30:35][login.py][line:187][INFO] 答案6：
+[Tue, 25 Jan 2022 08:30:35][login.py][line:186][INFO] 必填问题7：你目前是否已就诊或正在住院?
+[Tue, 25 Jan 2022 08:30:35][login.py][line:187][INFO] 答案7：
+[Tue, 25 Jan 2022 08:30:35][login.py][line:186][INFO] 必填问题8：你目前是否被隔离？
+[Tue, 25 Jan 2022 08:30:35][login.py][line:187][INFO] 答案8：
+[Tue, 25 Jan 2022 08:30:35][login.py][line:186][INFO] 必填问题9：近1个月是否去过重点疫区或接触过重点疫区人士？
+[Tue, 25 Jan 2022 08:30:35][login.py][line:187][INFO] 答案9：
+[Tue, 25 Jan 2022 08:30:35][login.py][line:186][INFO] 必填问题10：近1个月是否接触过确诊病例？
+[Tue, 25 Jan 2022 08:30:35][login.py][line:187][INFO] 答案10：
+[Tue, 25 Jan 2022 08:30:35][login.py][line:186][INFO] 必填问题11：近1个月是否接触过疑似病例？
+[Tue, 25 Jan 2022 08:30:35][login.py][line:187][INFO] 答案11：
+[Tue, 25 Jan 2022 08:30:35][login.py][line:186][INFO] 必填问题12：你今天的体温是多少？
+[Tue, 25 Jan 2022 08:30:35][login.py][line:187][INFO] 答案12：
+[Tue, 25 Jan 2022 08:30:35][login.py][line:186][INFO] 必填问题13：本人是否承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处 (必填)
+[Tue, 25 Jan 2022 08:30:35][login.py][line:187][INFO] 答案13：
+[Tue, 25 Jan 2022 08:30:35][login.py][line:251][INFO] 提交表单: 提交表单
+[Tue, 25 Jan 2022 08:30:35][login.py][line:260][DEBUG] 打卡失败,请重试
+[Tue, 25 Jan 2022 10:03:24][login.py][line:25][INFO] 登录: 正在初始化网络会话
+[Tue, 25 Jan 2022 10:03:24][login.py][line:48][INFO] 加密: 开始加密
+[Tue, 25 Jan 2022 10:03:24][login.py][line:51][INFO] 加密: 成功加密
+[Tue, 25 Jan 2022 10:03:24][login.py][line:52][INFO] 登录: 成功初始化网络会话
+[Tue, 25 Jan 2022 10:03:24][login.py][line:284][INFO] 登录: 开始准备登录
+[Tue, 25 Jan 2022 10:03:24][login.py][line:90][INFO] 登录: 正在获取用户配置信息
+[Tue, 25 Jan 2022 10:03:24][login.py][line:94][INFO] 登录: 成功获取用户配置信息
+[Tue, 25 Jan 2022 10:03:24][login.py][line:96][INFO] 登录: 正在获取参数
+[Tue, 25 Jan 2022 10:03:25][login.py][line:100][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 10:03:25][login.py][line:101][INFO] 登录: 正在获取新的参数
+[Tue, 25 Jan 2022 10:03:25][login.py][line:104][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 10:03:25][login.py][line:114][INFO] 登录: 正在登录
+[Tue, 25 Jan 2022 10:03:25][login.py][line:118][INFO] 登录成功
+[Tue, 25 Jan 2022 10:03:25][login.py][line:253][INFO] 提交表单: 获取最新表单
+[Tue, 25 Jan 2022 10:03:26][login.py][line:258][INFO] 提交表单: 获取学校Taskid
+[Tue, 25 Jan 2022 10:03:26][login.py][line:261][INFO] 提交表单: 获取表单
+[Tue, 25 Jan 2022 10:03:26][login.py][line:264][INFO] 填写新表单
+[Tue, 25 Jan 2022 10:03:26][login.py][line:186][INFO] 必填问题1：你的学生类别？
+[Tue, 25 Jan 2022 10:03:26][login.py][line:187][INFO] 答案1：
+[Tue, 25 Jan 2022 10:03:26][login.py][line:186][INFO] 必填问题2：你属于下列哪个校区学生?
+[Tue, 25 Jan 2022 10:03:26][login.py][line:187][INFO] 答案2：
+[Tue, 25 Jan 2022 10:03:26][login.py][line:186][INFO] 必填问题3：你目前是否在校？
+[Tue, 25 Jan 2022 10:03:26][login.py][line:187][INFO] 答案3：
+[Tue, 25 Jan 2022 10:03:26][login.py][line:186][INFO] 必填问题4：你目前的居住地区是否为疫情中高风险地区？
+[Tue, 25 Jan 2022 10:03:26][login.py][line:187][INFO] 答案4：
+[Tue, 25 Jan 2022 10:03:26][login.py][line:186][INFO] 必填问题5：你目前是否有疑似/确诊新冠肺炎？
+[Tue, 25 Jan 2022 10:03:26][login.py][line:187][INFO] 答案5：
+[Tue, 25 Jan 2022 10:03:26][login.py][line:186][INFO] 必填问题6：你目前是否有发热、咳嗽等症状?
+[Tue, 25 Jan 2022 10:03:26][login.py][line:187][INFO] 答案6：
+[Tue, 25 Jan 2022 10:03:26][login.py][line:186][INFO] 必填问题7：你目前是否已就诊或正在住院?
+[Tue, 25 Jan 2022 10:03:26][login.py][line:187][INFO] 答案7：
+[Tue, 25 Jan 2022 10:03:26][login.py][line:186][INFO] 必填问题8：你目前是否被隔离？
+[Tue, 25 Jan 2022 10:03:26][login.py][line:187][INFO] 答案8：
+[Tue, 25 Jan 2022 10:03:26][login.py][line:186][INFO] 必填问题9：近1个月是否去过重点疫区或接触过重点疫区人士？
+[Tue, 25 Jan 2022 10:03:26][login.py][line:187][INFO] 答案9：
+[Tue, 25 Jan 2022 10:03:26][login.py][line:186][INFO] 必填问题10：近1个月是否接触过确诊病例？
+[Tue, 25 Jan 2022 10:03:26][login.py][line:187][INFO] 答案10：
+[Tue, 25 Jan 2022 10:03:26][login.py][line:186][INFO] 必填问题11：近1个月是否接触过疑似病例？
+[Tue, 25 Jan 2022 10:03:26][login.py][line:187][INFO] 答案11：
+[Tue, 25 Jan 2022 10:03:26][login.py][line:186][INFO] 必填问题12：你今天的体温是多少？
+[Tue, 25 Jan 2022 10:03:26][login.py][line:187][INFO] 答案12：
+[Tue, 25 Jan 2022 10:03:26][login.py][line:186][INFO] 必填问题13：本人是否承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处 (必填)
+[Tue, 25 Jan 2022 10:03:26][login.py][line:187][INFO] 答案13：
+[Tue, 25 Jan 2022 10:03:26][login.py][line:266][INFO] 提交表单: 提交表单
+[Tue, 25 Jan 2022 10:34:45][login.py][line:33][INFO] 登录: 正在初始化网络会话
+[Tue, 25 Jan 2022 10:34:45][login.py][line:57][INFO] 加密: 开始加密
+[Tue, 25 Jan 2022 10:34:46][login.py][line:60][INFO] 加密: 成功加密
+[Tue, 25 Jan 2022 10:34:46][login.py][line:61][INFO] 登录: 成功初始化网络会话
+[Tue, 25 Jan 2022 10:34:46][login.py][line:357][INFO] 登录: 开始准备登录
+[Tue, 25 Jan 2022 10:34:46][login.py][line:99][INFO] 登录: 正在获取用户配置信息
+[Tue, 25 Jan 2022 10:34:46][login.py][line:100][INFO] 登录: 成功获取用户配置信息
+[Tue, 25 Jan 2022 10:34:46][login.py][line:102][INFO] 登录: 正在获取参数
+[Tue, 25 Jan 2022 10:34:46][login.py][line:106][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 10:34:46][login.py][line:107][INFO] 登录: 正在获取新的参数
+[Tue, 25 Jan 2022 10:34:46][login.py][line:110][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 10:34:46][login.py][line:120][INFO] 登录: 正在登录
+[Tue, 25 Jan 2022 10:34:47][login.py][line:124][INFO] 登录成功
+[Tue, 25 Jan 2022 10:34:47][login.py][line:328][INFO] 提交表单: 获取最新表单
+[Tue, 25 Jan 2022 10:34:47][login.py][line:333][INFO] 提交表单: 获取学校Taskid
+[Tue, 25 Jan 2022 10:34:47][login.py][line:336][INFO] 提交表单: 获取表单
+[Tue, 25 Jan 2022 10:34:48][login.py][line:339][INFO] 填写新表单
+[Tue, 25 Jan 2022 10:34:48][login.py][line:192][INFO] 必填问题1：你的学生类别？
+[Tue, 25 Jan 2022 10:34:48][login.py][line:193][INFO] 答案1：
+[Tue, 25 Jan 2022 10:34:48][login.py][line:192][INFO] 必填问题2：你属于下列哪个校区学生?
+[Tue, 25 Jan 2022 10:34:48][login.py][line:193][INFO] 答案2：
+[Tue, 25 Jan 2022 10:34:48][login.py][line:192][INFO] 必填问题3：你目前是否在校？
+[Tue, 25 Jan 2022 10:34:48][login.py][line:193][INFO] 答案3：
+[Tue, 25 Jan 2022 10:34:48][login.py][line:192][INFO] 必填问题4：你目前的居住地区是否为疫情中高风险地区？
+[Tue, 25 Jan 2022 10:34:48][login.py][line:193][INFO] 答案4：
+[Tue, 25 Jan 2022 10:34:48][login.py][line:192][INFO] 必填问题5：你目前是否有疑似/确诊新冠肺炎？
+[Tue, 25 Jan 2022 10:34:48][login.py][line:193][INFO] 答案5：
+[Tue, 25 Jan 2022 10:34:48][login.py][line:192][INFO] 必填问题6：你目前是否有发热、咳嗽等症状?
+[Tue, 25 Jan 2022 10:34:48][login.py][line:193][INFO] 答案6：
+[Tue, 25 Jan 2022 10:34:48][login.py][line:192][INFO] 必填问题7：你目前是否已就诊或正在住院?
+[Tue, 25 Jan 2022 10:34:48][login.py][line:193][INFO] 答案7：
+[Tue, 25 Jan 2022 10:34:48][login.py][line:192][INFO] 必填问题8：你目前是否被隔离？
+[Tue, 25 Jan 2022 10:34:48][login.py][line:193][INFO] 答案8：
+[Tue, 25 Jan 2022 10:34:48][login.py][line:192][INFO] 必填问题9：近1个月是否去过重点疫区或接触过重点疫区人士？
+[Tue, 25 Jan 2022 10:34:48][login.py][line:193][INFO] 答案9：
+[Tue, 25 Jan 2022 10:34:48][login.py][line:192][INFO] 必填问题10：近1个月是否接触过确诊病例？
+[Tue, 25 Jan 2022 10:34:48][login.py][line:193][INFO] 答案10：
+[Tue, 25 Jan 2022 10:34:48][login.py][line:192][INFO] 必填问题11：近1个月是否接触过疑似病例？
+[Tue, 25 Jan 2022 10:34:48][login.py][line:193][INFO] 答案11：
+[Tue, 25 Jan 2022 10:34:48][login.py][line:192][INFO] 必填问题12：你今天的体温是多少？
+[Tue, 25 Jan 2022 10:34:48][login.py][line:193][INFO] 答案12：
+[Tue, 25 Jan 2022 10:34:48][login.py][line:192][INFO] 必填问题13：本人是否承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处 (必填)
+[Tue, 25 Jan 2022 10:34:48][login.py][line:193][INFO] 答案13：
+[Tue, 25 Jan 2022 10:34:48][login.py][line:341][INFO] 提交表单: 提交表单
+[Tue, 25 Jan 2022 10:34:48][login.py][line:348][DEBUG] 打卡失败,请重试
+[Tue, 25 Jan 2022 10:35:47][login.py][line:33][INFO] 登录: 正在初始化网络会话
+[Tue, 25 Jan 2022 10:35:47][login.py][line:57][INFO] 加密: 开始加密
+[Tue, 25 Jan 2022 10:35:47][login.py][line:60][INFO] 加密: 成功加密
+[Tue, 25 Jan 2022 10:35:47][login.py][line:61][INFO] 登录: 成功初始化网络会话
+[Tue, 25 Jan 2022 10:35:47][login.py][line:359][INFO] 登录: 开始准备登录
+[Tue, 25 Jan 2022 10:35:47][login.py][line:99][INFO] 登录: 正在获取用户配置信息
+[Tue, 25 Jan 2022 10:35:47][login.py][line:100][INFO] 登录: 成功获取用户配置信息
+[Tue, 25 Jan 2022 10:35:47][login.py][line:102][INFO] 登录: 正在获取参数
+[Tue, 25 Jan 2022 10:35:48][login.py][line:106][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 10:35:48][login.py][line:107][INFO] 登录: 正在获取新的参数
+[Tue, 25 Jan 2022 10:35:48][login.py][line:110][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 10:35:48][login.py][line:120][INFO] 登录: 正在登录
+[Tue, 25 Jan 2022 10:35:48][login.py][line:124][INFO] 登录成功
+[Tue, 25 Jan 2022 10:35:48][login.py][line:328][INFO] 提交表单: 获取最新表单
+[Tue, 25 Jan 2022 10:35:49][login.py][line:333][INFO] 提交表单: 获取学校Taskid
+[Tue, 25 Jan 2022 10:35:49][login.py][line:336][INFO] 提交表单: 获取表单
+[Tue, 25 Jan 2022 10:35:49][login.py][line:339][INFO] 填写新表单
+[Tue, 25 Jan 2022 10:35:49][login.py][line:192][INFO] 必填问题1：你的学生类别？
+[Tue, 25 Jan 2022 10:35:49][login.py][line:193][INFO] 答案1：
+[Tue, 25 Jan 2022 10:35:49][login.py][line:192][INFO] 必填问题2：你属于下列哪个校区学生?
+[Tue, 25 Jan 2022 10:35:49][login.py][line:193][INFO] 答案2：
+[Tue, 25 Jan 2022 10:35:49][login.py][line:192][INFO] 必填问题3：你目前是否在校？
+[Tue, 25 Jan 2022 10:35:49][login.py][line:193][INFO] 答案3：
+[Tue, 25 Jan 2022 10:35:49][login.py][line:192][INFO] 必填问题4：你目前的居住地区是否为疫情中高风险地区？
+[Tue, 25 Jan 2022 10:35:49][login.py][line:193][INFO] 答案4：
+[Tue, 25 Jan 2022 10:35:49][login.py][line:192][INFO] 必填问题5：你目前是否有疑似/确诊新冠肺炎？
+[Tue, 25 Jan 2022 10:35:49][login.py][line:193][INFO] 答案5：
+[Tue, 25 Jan 2022 10:35:49][login.py][line:192][INFO] 必填问题6：你目前是否有发热、咳嗽等症状?
+[Tue, 25 Jan 2022 10:35:49][login.py][line:193][INFO] 答案6：
+[Tue, 25 Jan 2022 10:35:49][login.py][line:192][INFO] 必填问题7：你目前是否已就诊或正在住院?
+[Tue, 25 Jan 2022 10:35:49][login.py][line:193][INFO] 答案7：
+[Tue, 25 Jan 2022 10:35:49][login.py][line:192][INFO] 必填问题8：你目前是否被隔离？
+[Tue, 25 Jan 2022 10:35:49][login.py][line:193][INFO] 答案8：
+[Tue, 25 Jan 2022 10:35:49][login.py][line:192][INFO] 必填问题9：近1个月是否去过重点疫区或接触过重点疫区人士？
+[Tue, 25 Jan 2022 10:35:49][login.py][line:193][INFO] 答案9：
+[Tue, 25 Jan 2022 10:35:49][login.py][line:192][INFO] 必填问题10：近1个月是否接触过确诊病例？
+[Tue, 25 Jan 2022 10:35:49][login.py][line:193][INFO] 答案10：
+[Tue, 25 Jan 2022 10:35:49][login.py][line:192][INFO] 必填问题11：近1个月是否接触过疑似病例？
+[Tue, 25 Jan 2022 10:35:49][login.py][line:193][INFO] 答案11：
+[Tue, 25 Jan 2022 10:35:49][login.py][line:192][INFO] 必填问题12：你今天的体温是多少？
+[Tue, 25 Jan 2022 10:35:49][login.py][line:193][INFO] 答案12：
+[Tue, 25 Jan 2022 10:35:49][login.py][line:192][INFO] 必填问题13：本人是否承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处 (必填)
+[Tue, 25 Jan 2022 10:35:49][login.py][line:193][INFO] 答案13：
+[Tue, 25 Jan 2022 10:46:54][login.py][line:33][INFO] 登录: 正在初始化网络会话
+[Tue, 25 Jan 2022 10:46:54][login.py][line:57][INFO] 加密: 开始加密
+[Tue, 25 Jan 2022 10:46:54][login.py][line:60][INFO] 加密: 成功加密
+[Tue, 25 Jan 2022 10:46:54][login.py][line:61][INFO] 登录: 成功初始化网络会话
+[Tue, 25 Jan 2022 10:46:54][login.py][line:359][INFO] 登录: 开始准备登录
+[Tue, 25 Jan 2022 10:46:54][login.py][line:99][INFO] 登录: 正在获取用户配置信息
+[Tue, 25 Jan 2022 10:46:54][login.py][line:100][INFO] 登录: 成功获取用户配置信息
+[Tue, 25 Jan 2022 10:46:54][login.py][line:102][INFO] 登录: 正在获取参数
+[Tue, 25 Jan 2022 10:46:55][login.py][line:106][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 10:46:55][login.py][line:107][INFO] 登录: 正在获取新的参数
+[Tue, 25 Jan 2022 10:46:55][login.py][line:110][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 10:46:55][login.py][line:120][INFO] 登录: 正在登录
+[Tue, 25 Jan 2022 10:46:55][login.py][line:124][INFO] 登录成功
+[Tue, 25 Jan 2022 10:46:55][login.py][line:328][INFO] 提交表单: 获取最新表单
+[Tue, 25 Jan 2022 10:46:55][login.py][line:333][INFO] 提交表单: 获取学校Taskid
+[Tue, 25 Jan 2022 10:46:55][login.py][line:336][INFO] 提交表单: 获取表单
+[Tue, 25 Jan 2022 10:46:56][login.py][line:339][INFO] 填写新表单
+[Tue, 25 Jan 2022 10:46:56][login.py][line:192][INFO] 必填问题1：你的学生类别？
+[Tue, 25 Jan 2022 10:46:56][login.py][line:193][INFO] 答案1：
+[Tue, 25 Jan 2022 10:46:56][login.py][line:192][INFO] 必填问题2：你属于下列哪个校区学生?
+[Tue, 25 Jan 2022 10:46:56][login.py][line:193][INFO] 答案2：
+[Tue, 25 Jan 2022 10:46:56][login.py][line:192][INFO] 必填问题3：你目前是否在校？
+[Tue, 25 Jan 2022 10:46:56][login.py][line:193][INFO] 答案3：
+[Tue, 25 Jan 2022 10:46:56][login.py][line:192][INFO] 必填问题4：你目前的居住地区是否为疫情中高风险地区？
+[Tue, 25 Jan 2022 10:46:56][login.py][line:193][INFO] 答案4：
+[Tue, 25 Jan 2022 10:46:56][login.py][line:192][INFO] 必填问题5：你目前是否有疑似/确诊新冠肺炎？
+[Tue, 25 Jan 2022 10:46:56][login.py][line:193][INFO] 答案5：
+[Tue, 25 Jan 2022 10:46:56][login.py][line:192][INFO] 必填问题6：你目前是否有发热、咳嗽等症状?
+[Tue, 25 Jan 2022 10:46:56][login.py][line:193][INFO] 答案6：
+[Tue, 25 Jan 2022 10:46:56][login.py][line:192][INFO] 必填问题7：你目前是否已就诊或正在住院?
+[Tue, 25 Jan 2022 10:46:56][login.py][line:193][INFO] 答案7：
+[Tue, 25 Jan 2022 10:46:56][login.py][line:192][INFO] 必填问题8：你目前是否被隔离？
+[Tue, 25 Jan 2022 10:46:56][login.py][line:193][INFO] 答案8：
+[Tue, 25 Jan 2022 10:46:56][login.py][line:192][INFO] 必填问题9：近1个月是否去过重点疫区或接触过重点疫区人士？
+[Tue, 25 Jan 2022 10:46:56][login.py][line:193][INFO] 答案9：
+[Tue, 25 Jan 2022 10:46:56][login.py][line:192][INFO] 必填问题10：近1个月是否接触过确诊病例？
+[Tue, 25 Jan 2022 10:46:56][login.py][line:193][INFO] 答案10：
+[Tue, 25 Jan 2022 10:46:56][login.py][line:192][INFO] 必填问题11：近1个月是否接触过疑似病例？
+[Tue, 25 Jan 2022 10:46:56][login.py][line:193][INFO] 答案11：
+[Tue, 25 Jan 2022 10:46:56][login.py][line:192][INFO] 必填问题12：你今天的体温是多少？
+[Tue, 25 Jan 2022 10:46:56][login.py][line:193][INFO] 答案12：
+[Tue, 25 Jan 2022 10:46:56][login.py][line:192][INFO] 必填问题13：本人是否承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处 (必填)
+[Tue, 25 Jan 2022 10:46:56][login.py][line:193][INFO] 答案13：
+[Tue, 25 Jan 2022 11:03:29][login.py][line:33][INFO] 登录: 正在初始化网络会话
+[Tue, 25 Jan 2022 11:03:29][login.py][line:57][INFO] 加密: 开始加密
+[Tue, 25 Jan 2022 11:03:29][login.py][line:60][INFO] 加密: 成功加密
+[Tue, 25 Jan 2022 11:03:29][login.py][line:61][INFO] 登录: 成功初始化网络会话
+[Tue, 25 Jan 2022 11:03:29][login.py][line:359][INFO] 登录: 开始准备登录
+[Tue, 25 Jan 2022 11:03:29][login.py][line:99][INFO] 登录: 正在获取用户配置信息
+[Tue, 25 Jan 2022 11:03:29][login.py][line:100][INFO] 登录: 成功获取用户配置信息
+[Tue, 25 Jan 2022 11:03:29][login.py][line:102][INFO] 登录: 正在获取参数
+[Tue, 25 Jan 2022 11:03:29][login.py][line:106][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:03:29][login.py][line:107][INFO] 登录: 正在获取新的参数
+[Tue, 25 Jan 2022 11:03:29][login.py][line:110][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:03:29][login.py][line:120][INFO] 登录: 正在登录
+[Tue, 25 Jan 2022 11:03:30][login.py][line:124][INFO] 登录成功
+[Tue, 25 Jan 2022 11:03:30][login.py][line:330][INFO] 提交表单: 获取最新表单
+[Tue, 25 Jan 2022 11:03:30][login.py][line:335][INFO] 提交表单: 获取学校Taskid
+[Tue, 25 Jan 2022 11:03:30][login.py][line:338][INFO] 提交表单: 获取表单
+[Tue, 25 Jan 2022 11:03:31][login.py][line:341][INFO] 填写新表单
+[Tue, 25 Jan 2022 11:03:31][login.py][line:194][INFO] 必填问题1：你的学生类别？
+[Tue, 25 Jan 2022 11:03:31][login.py][line:195][INFO] 答案1：
+[Tue, 25 Jan 2022 11:03:31][login.py][line:194][INFO] 必填问题2：你属于下列哪个校区学生?
+[Tue, 25 Jan 2022 11:03:31][login.py][line:195][INFO] 答案2：
+[Tue, 25 Jan 2022 11:03:31][login.py][line:194][INFO] 必填问题3：你目前是否在校？
+[Tue, 25 Jan 2022 11:03:31][login.py][line:195][INFO] 答案3：
+[Tue, 25 Jan 2022 11:03:31][login.py][line:194][INFO] 必填问题4：你目前的居住地区是否为疫情中高风险地区？
+[Tue, 25 Jan 2022 11:03:31][login.py][line:195][INFO] 答案4：
+[Tue, 25 Jan 2022 11:03:31][login.py][line:194][INFO] 必填问题5：你目前是否有疑似/确诊新冠肺炎？
+[Tue, 25 Jan 2022 11:03:31][login.py][line:195][INFO] 答案5：
+[Tue, 25 Jan 2022 11:03:31][login.py][line:194][INFO] 必填问题6：你目前是否有发热、咳嗽等症状?
+[Tue, 25 Jan 2022 11:03:31][login.py][line:195][INFO] 答案6：
+[Tue, 25 Jan 2022 11:03:31][login.py][line:194][INFO] 必填问题7：你目前是否已就诊或正在住院?
+[Tue, 25 Jan 2022 11:03:31][login.py][line:195][INFO] 答案7：
+[Tue, 25 Jan 2022 11:03:31][login.py][line:194][INFO] 必填问题8：你目前是否被隔离？
+[Tue, 25 Jan 2022 11:03:31][login.py][line:195][INFO] 答案8：
+[Tue, 25 Jan 2022 11:03:31][login.py][line:194][INFO] 必填问题9：近1个月是否去过重点疫区或接触过重点疫区人士？
+[Tue, 25 Jan 2022 11:03:31][login.py][line:195][INFO] 答案9：
+[Tue, 25 Jan 2022 11:03:31][login.py][line:194][INFO] 必填问题10：近1个月是否接触过确诊病例？
+[Tue, 25 Jan 2022 11:03:31][login.py][line:195][INFO] 答案10：
+[Tue, 25 Jan 2022 11:03:31][login.py][line:194][INFO] 必填问题11：近1个月是否接触过疑似病例？
+[Tue, 25 Jan 2022 11:03:31][login.py][line:195][INFO] 答案11：
+[Tue, 25 Jan 2022 11:03:31][login.py][line:194][INFO] 必填问题12：你今天的体温是多少？
+[Tue, 25 Jan 2022 11:03:31][login.py][line:195][INFO] 答案12：
+[Tue, 25 Jan 2022 11:03:31][login.py][line:194][INFO] 必填问题13：本人是否承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处 (必填)
+[Tue, 25 Jan 2022 11:03:31][login.py][line:195][INFO] 答案13：
+[Tue, 25 Jan 2022 11:03:31][login.py][line:343][INFO] 提交表单: 提交表单
+[Tue, 25 Jan 2022 11:03:31][login.py][line:350][DEBUG] 打卡失败,请重试
+[Tue, 25 Jan 2022 11:04:48][login.py][line:33][INFO] 登录: 正在初始化网络会话
+[Tue, 25 Jan 2022 11:04:48][login.py][line:57][INFO] 加密: 开始加密
+[Tue, 25 Jan 2022 11:04:48][login.py][line:60][INFO] 加密: 成功加密
+[Tue, 25 Jan 2022 11:04:48][login.py][line:61][INFO] 登录: 成功初始化网络会话
+[Tue, 25 Jan 2022 11:04:48][login.py][line:360][INFO] 登录: 开始准备登录
+[Tue, 25 Jan 2022 11:04:48][login.py][line:99][INFO] 登录: 正在获取用户配置信息
+[Tue, 25 Jan 2022 11:04:48][login.py][line:100][INFO] 登录: 成功获取用户配置信息
+[Tue, 25 Jan 2022 11:04:48][login.py][line:102][INFO] 登录: 正在获取参数
+[Tue, 25 Jan 2022 11:04:49][login.py][line:106][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:04:49][login.py][line:107][INFO] 登录: 正在获取新的参数
+[Tue, 25 Jan 2022 11:04:49][login.py][line:110][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:04:49][login.py][line:120][INFO] 登录: 正在登录
+[Tue, 25 Jan 2022 11:04:49][login.py][line:124][INFO] 登录成功
+[Tue, 25 Jan 2022 11:04:49][login.py][line:330][INFO] 提交表单: 获取最新表单
+[Tue, 25 Jan 2022 11:04:50][login.py][line:335][INFO] 提交表单: 获取学校Taskid
+[Tue, 25 Jan 2022 11:04:50][login.py][line:338][INFO] 提交表单: 获取表单
+[Tue, 25 Jan 2022 11:04:50][login.py][line:341][INFO] 填写新表单
+[Tue, 25 Jan 2022 11:04:50][login.py][line:194][INFO] 必填问题1：你的学生类别？
+[Tue, 25 Jan 2022 11:04:50][login.py][line:195][INFO] 答案1：
+[Tue, 25 Jan 2022 11:04:50][login.py][line:194][INFO] 必填问题2：你属于下列哪个校区学生?
+[Tue, 25 Jan 2022 11:04:50][login.py][line:195][INFO] 答案2：
+[Tue, 25 Jan 2022 11:04:50][login.py][line:194][INFO] 必填问题3：你目前是否在校？
+[Tue, 25 Jan 2022 11:04:50][login.py][line:195][INFO] 答案3：
+[Tue, 25 Jan 2022 11:04:50][login.py][line:194][INFO] 必填问题4：你目前的居住地区是否为疫情中高风险地区？
+[Tue, 25 Jan 2022 11:04:50][login.py][line:195][INFO] 答案4：
+[Tue, 25 Jan 2022 11:04:50][login.py][line:194][INFO] 必填问题5：你目前是否有疑似/确诊新冠肺炎？
+[Tue, 25 Jan 2022 11:04:50][login.py][line:195][INFO] 答案5：
+[Tue, 25 Jan 2022 11:04:50][login.py][line:194][INFO] 必填问题6：你目前是否有发热、咳嗽等症状?
+[Tue, 25 Jan 2022 11:04:50][login.py][line:195][INFO] 答案6：
+[Tue, 25 Jan 2022 11:04:50][login.py][line:194][INFO] 必填问题7：你目前是否已就诊或正在住院?
+[Tue, 25 Jan 2022 11:04:50][login.py][line:195][INFO] 答案7：
+[Tue, 25 Jan 2022 11:04:50][login.py][line:194][INFO] 必填问题8：你目前是否被隔离？
+[Tue, 25 Jan 2022 11:04:50][login.py][line:195][INFO] 答案8：
+[Tue, 25 Jan 2022 11:04:50][login.py][line:194][INFO] 必填问题9：近1个月是否去过重点疫区或接触过重点疫区人士？
+[Tue, 25 Jan 2022 11:04:50][login.py][line:195][INFO] 答案9：
+[Tue, 25 Jan 2022 11:04:50][login.py][line:194][INFO] 必填问题10：近1个月是否接触过确诊病例？
+[Tue, 25 Jan 2022 11:04:50][login.py][line:195][INFO] 答案10：
+[Tue, 25 Jan 2022 11:04:50][login.py][line:194][INFO] 必填问题11：近1个月是否接触过疑似病例？
+[Tue, 25 Jan 2022 11:04:50][login.py][line:195][INFO] 答案11：
+[Tue, 25 Jan 2022 11:04:50][login.py][line:194][INFO] 必填问题12：你今天的体温是多少？
+[Tue, 25 Jan 2022 11:04:50][login.py][line:195][INFO] 答案12：
+[Tue, 25 Jan 2022 11:04:50][login.py][line:194][INFO] 必填问题13：本人是否承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处 (必填)
+[Tue, 25 Jan 2022 11:04:50][login.py][line:195][INFO] 答案13：
+[Tue, 25 Jan 2022 11:04:50][login.py][line:344][INFO] 提交表单: 提交表单
+[Tue, 25 Jan 2022 11:04:50][login.py][line:351][DEBUG] 打卡失败,请重试
+[Tue, 25 Jan 2022 11:06:38][login.py][line:33][INFO] 登录: 正在初始化网络会话
+[Tue, 25 Jan 2022 11:06:38][login.py][line:57][INFO] 加密: 开始加密
+[Tue, 25 Jan 2022 11:06:38][login.py][line:60][INFO] 加密: 成功加密
+[Tue, 25 Jan 2022 11:06:38][login.py][line:61][INFO] 登录: 成功初始化网络会话
+[Tue, 25 Jan 2022 11:06:38][login.py][line:360][INFO] 登录: 开始准备登录
+[Tue, 25 Jan 2022 11:06:38][login.py][line:99][INFO] 登录: 正在获取用户配置信息
+[Tue, 25 Jan 2022 11:06:38][login.py][line:100][INFO] 登录: 成功获取用户配置信息
+[Tue, 25 Jan 2022 11:06:38][login.py][line:102][INFO] 登录: 正在获取参数
+[Tue, 25 Jan 2022 11:06:39][login.py][line:106][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:06:39][login.py][line:107][INFO] 登录: 正在获取新的参数
+[Tue, 25 Jan 2022 11:06:39][login.py][line:110][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:06:39][login.py][line:120][INFO] 登录: 正在登录
+[Tue, 25 Jan 2022 11:06:40][login.py][line:124][INFO] 登录成功
+[Tue, 25 Jan 2022 11:06:40][login.py][line:330][INFO] 提交表单: 获取最新表单
+[Tue, 25 Jan 2022 11:06:40][login.py][line:335][INFO] 提交表单: 获取学校Taskid
+[Tue, 25 Jan 2022 11:06:40][login.py][line:338][INFO] 提交表单: 获取表单
+[Tue, 25 Jan 2022 11:06:40][login.py][line:341][INFO] 填写新表单
+[Tue, 25 Jan 2022 11:06:40][login.py][line:194][INFO] 必填问题1：你的学生类别？
+[Tue, 25 Jan 2022 11:06:40][login.py][line:195][INFO] 答案1：
+[Tue, 25 Jan 2022 11:06:40][login.py][line:194][INFO] 必填问题2：你属于下列哪个校区学生?
+[Tue, 25 Jan 2022 11:06:40][login.py][line:195][INFO] 答案2：
+[Tue, 25 Jan 2022 11:06:40][login.py][line:194][INFO] 必填问题3：你目前是否在校？
+[Tue, 25 Jan 2022 11:06:40][login.py][line:195][INFO] 答案3：
+[Tue, 25 Jan 2022 11:06:40][login.py][line:194][INFO] 必填问题4：你目前的居住地区是否为疫情中高风险地区？
+[Tue, 25 Jan 2022 11:06:40][login.py][line:195][INFO] 答案4：
+[Tue, 25 Jan 2022 11:06:40][login.py][line:194][INFO] 必填问题5：你目前是否有疑似/确诊新冠肺炎？
+[Tue, 25 Jan 2022 11:06:40][login.py][line:195][INFO] 答案5：
+[Tue, 25 Jan 2022 11:06:40][login.py][line:194][INFO] 必填问题6：你目前是否有发热、咳嗽等症状?
+[Tue, 25 Jan 2022 11:06:40][login.py][line:195][INFO] 答案6：
+[Tue, 25 Jan 2022 11:06:40][login.py][line:194][INFO] 必填问题7：你目前是否已就诊或正在住院?
+[Tue, 25 Jan 2022 11:06:40][login.py][line:195][INFO] 答案7：
+[Tue, 25 Jan 2022 11:06:40][login.py][line:194][INFO] 必填问题8：你目前是否被隔离？
+[Tue, 25 Jan 2022 11:06:40][login.py][line:195][INFO] 答案8：
+[Tue, 25 Jan 2022 11:06:40][login.py][line:194][INFO] 必填问题9：近1个月是否去过重点疫区或接触过重点疫区人士？
+[Tue, 25 Jan 2022 11:06:40][login.py][line:195][INFO] 答案9：
+[Tue, 25 Jan 2022 11:06:40][login.py][line:194][INFO] 必填问题10：近1个月是否接触过确诊病例？
+[Tue, 25 Jan 2022 11:06:40][login.py][line:195][INFO] 答案10：
+[Tue, 25 Jan 2022 11:06:40][login.py][line:194][INFO] 必填问题11：近1个月是否接触过疑似病例？
+[Tue, 25 Jan 2022 11:06:40][login.py][line:195][INFO] 答案11：
+[Tue, 25 Jan 2022 11:06:40][login.py][line:194][INFO] 必填问题12：你今天的体温是多少？
+[Tue, 25 Jan 2022 11:06:40][login.py][line:195][INFO] 答案12：
+[Tue, 25 Jan 2022 11:06:40][login.py][line:194][INFO] 必填问题13：本人是否承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处 (必填)
+[Tue, 25 Jan 2022 11:06:40][login.py][line:195][INFO] 答案13：
+[Tue, 25 Jan 2022 11:06:40][login.py][line:344][INFO] 提交表单: 提交表单
+[Tue, 25 Jan 2022 11:06:41][login.py][line:351][DEBUG] 打卡失败,请重试
+[Tue, 25 Jan 2022 11:07:59][login.py][line:33][INFO] 登录: 正在初始化网络会话
+[Tue, 25 Jan 2022 11:07:59][login.py][line:57][INFO] 加密: 开始加密
+[Tue, 25 Jan 2022 11:07:59][login.py][line:60][INFO] 加密: 成功加密
+[Tue, 25 Jan 2022 11:07:59][login.py][line:61][INFO] 登录: 成功初始化网络会话
+[Tue, 25 Jan 2022 11:07:59][login.py][line:360][INFO] 登录: 开始准备登录
+[Tue, 25 Jan 2022 11:07:59][login.py][line:99][INFO] 登录: 正在获取用户配置信息
+[Tue, 25 Jan 2022 11:07:59][login.py][line:100][INFO] 登录: 成功获取用户配置信息
+[Tue, 25 Jan 2022 11:07:59][login.py][line:102][INFO] 登录: 正在获取参数
+[Tue, 25 Jan 2022 11:08:00][login.py][line:106][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:08:00][login.py][line:107][INFO] 登录: 正在获取新的参数
+[Tue, 25 Jan 2022 11:08:00][login.py][line:110][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:08:00][login.py][line:120][INFO] 登录: 正在登录
+[Tue, 25 Jan 2022 11:08:01][login.py][line:124][INFO] 登录成功
+[Tue, 25 Jan 2022 11:08:01][login.py][line:330][INFO] 提交表单: 获取最新表单
+[Tue, 25 Jan 2022 11:08:01][login.py][line:335][INFO] 提交表单: 获取学校Taskid
+[Tue, 25 Jan 2022 11:08:01][login.py][line:338][INFO] 提交表单: 获取表单
+[Tue, 25 Jan 2022 11:08:01][login.py][line:341][INFO] 填写新表单
+[Tue, 25 Jan 2022 11:08:01][login.py][line:194][INFO] 必填问题1：你的学生类别？
+[Tue, 25 Jan 2022 11:08:01][login.py][line:195][INFO] 答案1：
+[Tue, 25 Jan 2022 11:08:01][login.py][line:194][INFO] 必填问题2：你属于下列哪个校区学生?
+[Tue, 25 Jan 2022 11:08:01][login.py][line:195][INFO] 答案2：
+[Tue, 25 Jan 2022 11:08:01][login.py][line:194][INFO] 必填问题3：你目前是否在校？
+[Tue, 25 Jan 2022 11:08:01][login.py][line:195][INFO] 答案3：
+[Tue, 25 Jan 2022 11:08:01][login.py][line:194][INFO] 必填问题4：你目前的居住地区是否为疫情中高风险地区？
+[Tue, 25 Jan 2022 11:08:01][login.py][line:195][INFO] 答案4：
+[Tue, 25 Jan 2022 11:08:01][login.py][line:194][INFO] 必填问题5：你目前是否有疑似/确诊新冠肺炎？
+[Tue, 25 Jan 2022 11:08:01][login.py][line:195][INFO] 答案5：
+[Tue, 25 Jan 2022 11:08:01][login.py][line:194][INFO] 必填问题6：你目前是否有发热、咳嗽等症状?
+[Tue, 25 Jan 2022 11:08:01][login.py][line:195][INFO] 答案6：
+[Tue, 25 Jan 2022 11:08:01][login.py][line:194][INFO] 必填问题7：你目前是否已就诊或正在住院?
+[Tue, 25 Jan 2022 11:08:01][login.py][line:195][INFO] 答案7：
+[Tue, 25 Jan 2022 11:08:01][login.py][line:194][INFO] 必填问题8：你目前是否被隔离？
+[Tue, 25 Jan 2022 11:08:01][login.py][line:195][INFO] 答案8：
+[Tue, 25 Jan 2022 11:08:01][login.py][line:194][INFO] 必填问题9：近1个月是否去过重点疫区或接触过重点疫区人士？
+[Tue, 25 Jan 2022 11:08:01][login.py][line:195][INFO] 答案9：
+[Tue, 25 Jan 2022 11:08:01][login.py][line:194][INFO] 必填问题10：近1个月是否接触过确诊病例？
+[Tue, 25 Jan 2022 11:08:01][login.py][line:195][INFO] 答案10：
+[Tue, 25 Jan 2022 11:08:01][login.py][line:194][INFO] 必填问题11：近1个月是否接触过疑似病例？
+[Tue, 25 Jan 2022 11:08:01][login.py][line:195][INFO] 答案11：
+[Tue, 25 Jan 2022 11:08:01][login.py][line:194][INFO] 必填问题12：你今天的体温是多少？
+[Tue, 25 Jan 2022 11:08:01][login.py][line:195][INFO] 答案12：
+[Tue, 25 Jan 2022 11:08:01][login.py][line:194][INFO] 必填问题13：本人是否承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处 (必填)
+[Tue, 25 Jan 2022 11:08:01][login.py][line:195][INFO] 答案13：
+[Tue, 25 Jan 2022 11:08:01][login.py][line:344][INFO] 提交表单: 提交表单
+[Tue, 25 Jan 2022 11:08:01][login.py][line:351][DEBUG] 打卡失败,请重试
+[Tue, 25 Jan 2022 11:11:15][login.py][line:33][INFO] 登录: 正在初始化网络会话
+[Tue, 25 Jan 2022 11:11:15][login.py][line:57][INFO] 加密: 开始加密
+[Tue, 25 Jan 2022 11:11:15][login.py][line:60][INFO] 加密: 成功加密
+[Tue, 25 Jan 2022 11:11:15][login.py][line:61][INFO] 登录: 成功初始化网络会话
+[Tue, 25 Jan 2022 11:11:15][login.py][line:360][INFO] 登录: 开始准备登录
+[Tue, 25 Jan 2022 11:11:15][login.py][line:99][INFO] 登录: 正在获取用户配置信息
+[Tue, 25 Jan 2022 11:11:15][login.py][line:100][INFO] 登录: 成功获取用户配置信息
+[Tue, 25 Jan 2022 11:11:15][login.py][line:102][INFO] 登录: 正在获取参数
+[Tue, 25 Jan 2022 11:11:16][login.py][line:106][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:11:16][login.py][line:107][INFO] 登录: 正在获取新的参数
+[Tue, 25 Jan 2022 11:11:16][login.py][line:110][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:11:16][login.py][line:120][INFO] 登录: 正在登录
+[Tue, 25 Jan 2022 11:11:17][login.py][line:124][INFO] 登录成功
+[Tue, 25 Jan 2022 11:11:17][login.py][line:330][INFO] 提交表单: 获取最新表单
+[Tue, 25 Jan 2022 11:11:17][login.py][line:335][INFO] 提交表单: 获取学校Taskid
+[Tue, 25 Jan 2022 11:11:17][login.py][line:338][INFO] 提交表单: 获取表单
+[Tue, 25 Jan 2022 11:11:17][login.py][line:341][INFO] 填写新表单
+[Tue, 25 Jan 2022 11:11:17][login.py][line:194][INFO] 必填问题1：你的学生类别？
+[Tue, 25 Jan 2022 11:11:17][login.py][line:195][INFO] 答案1：
+[Tue, 25 Jan 2022 11:11:17][login.py][line:194][INFO] 必填问题2：你属于下列哪个校区学生?
+[Tue, 25 Jan 2022 11:11:17][login.py][line:195][INFO] 答案2：
+[Tue, 25 Jan 2022 11:11:17][login.py][line:194][INFO] 必填问题3：你目前是否在校？
+[Tue, 25 Jan 2022 11:11:17][login.py][line:195][INFO] 答案3：
+[Tue, 25 Jan 2022 11:11:17][login.py][line:194][INFO] 必填问题4：你目前的居住地区是否为疫情中高风险地区？
+[Tue, 25 Jan 2022 11:11:17][login.py][line:195][INFO] 答案4：
+[Tue, 25 Jan 2022 11:11:17][login.py][line:194][INFO] 必填问题5：你目前是否有疑似/确诊新冠肺炎？
+[Tue, 25 Jan 2022 11:11:17][login.py][line:195][INFO] 答案5：
+[Tue, 25 Jan 2022 11:11:17][login.py][line:194][INFO] 必填问题6：你目前是否有发热、咳嗽等症状?
+[Tue, 25 Jan 2022 11:11:17][login.py][line:195][INFO] 答案6：
+[Tue, 25 Jan 2022 11:11:17][login.py][line:194][INFO] 必填问题7：你目前是否已就诊或正在住院?
+[Tue, 25 Jan 2022 11:11:17][login.py][line:195][INFO] 答案7：
+[Tue, 25 Jan 2022 11:11:17][login.py][line:194][INFO] 必填问题8：你目前是否被隔离？
+[Tue, 25 Jan 2022 11:11:17][login.py][line:195][INFO] 答案8：
+[Tue, 25 Jan 2022 11:11:17][login.py][line:194][INFO] 必填问题9：近1个月是否去过重点疫区或接触过重点疫区人士？
+[Tue, 25 Jan 2022 11:11:17][login.py][line:195][INFO] 答案9：
+[Tue, 25 Jan 2022 11:11:17][login.py][line:194][INFO] 必填问题10：近1个月是否接触过确诊病例？
+[Tue, 25 Jan 2022 11:11:17][login.py][line:195][INFO] 答案10：
+[Tue, 25 Jan 2022 11:11:17][login.py][line:194][INFO] 必填问题11：近1个月是否接触过疑似病例？
+[Tue, 25 Jan 2022 11:11:17][login.py][line:195][INFO] 答案11：
+[Tue, 25 Jan 2022 11:11:17][login.py][line:194][INFO] 必填问题12：你今天的体温是多少？
+[Tue, 25 Jan 2022 11:11:17][login.py][line:195][INFO] 答案12：
+[Tue, 25 Jan 2022 11:11:17][login.py][line:194][INFO] 必填问题13：本人是否承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处 (必填)
+[Tue, 25 Jan 2022 11:11:17][login.py][line:195][INFO] 答案13：
+[Tue, 25 Jan 2022 11:11:17][login.py][line:344][INFO] 提交表单: 提交表单
+[Tue, 25 Jan 2022 11:11:17][login.py][line:351][DEBUG] 打卡失败,请重试
+[Tue, 25 Jan 2022 11:12:25][login.py][line:33][INFO] 登录: 正在初始化网络会话
+[Tue, 25 Jan 2022 11:12:25][login.py][line:57][INFO] 加密: 开始加密
+[Tue, 25 Jan 2022 11:12:25][login.py][line:60][INFO] 加密: 成功加密
+[Tue, 25 Jan 2022 11:12:25][login.py][line:61][INFO] 登录: 成功初始化网络会话
+[Tue, 25 Jan 2022 11:12:25][login.py][line:360][INFO] 登录: 开始准备登录
+[Tue, 25 Jan 2022 11:12:25][login.py][line:99][INFO] 登录: 正在获取用户配置信息
+[Tue, 25 Jan 2022 11:12:25][login.py][line:100][INFO] 登录: 成功获取用户配置信息
+[Tue, 25 Jan 2022 11:12:25][login.py][line:102][INFO] 登录: 正在获取参数
+[Tue, 25 Jan 2022 11:12:26][login.py][line:106][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:12:26][login.py][line:107][INFO] 登录: 正在获取新的参数
+[Tue, 25 Jan 2022 11:12:26][login.py][line:110][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:12:26][login.py][line:120][INFO] 登录: 正在登录
+[Tue, 25 Jan 2022 11:12:27][login.py][line:124][INFO] 登录成功
+[Tue, 25 Jan 2022 11:12:27][login.py][line:330][INFO] 提交表单: 获取最新表单
+[Tue, 25 Jan 2022 11:12:27][login.py][line:335][INFO] 提交表单: 获取学校Taskid
+[Tue, 25 Jan 2022 11:12:27][login.py][line:338][INFO] 提交表单: 获取表单
+[Tue, 25 Jan 2022 11:12:27][login.py][line:341][INFO] 填写新表单
+[Tue, 25 Jan 2022 11:12:27][login.py][line:194][INFO] 必填问题1：你的学生类别？
+[Tue, 25 Jan 2022 11:12:27][login.py][line:195][INFO] 答案1：
+[Tue, 25 Jan 2022 11:12:27][login.py][line:194][INFO] 必填问题2：你属于下列哪个校区学生?
+[Tue, 25 Jan 2022 11:12:27][login.py][line:195][INFO] 答案2：
+[Tue, 25 Jan 2022 11:12:27][login.py][line:194][INFO] 必填问题3：你目前是否在校？
+[Tue, 25 Jan 2022 11:12:27][login.py][line:195][INFO] 答案3：
+[Tue, 25 Jan 2022 11:12:27][login.py][line:194][INFO] 必填问题4：你目前的居住地区是否为疫情中高风险地区？
+[Tue, 25 Jan 2022 11:12:27][login.py][line:195][INFO] 答案4：
+[Tue, 25 Jan 2022 11:12:27][login.py][line:194][INFO] 必填问题5：你目前是否有疑似/确诊新冠肺炎？
+[Tue, 25 Jan 2022 11:12:27][login.py][line:195][INFO] 答案5：
+[Tue, 25 Jan 2022 11:12:27][login.py][line:194][INFO] 必填问题6：你目前是否有发热、咳嗽等症状?
+[Tue, 25 Jan 2022 11:12:27][login.py][line:195][INFO] 答案6：
+[Tue, 25 Jan 2022 11:12:27][login.py][line:194][INFO] 必填问题7：你目前是否已就诊或正在住院?
+[Tue, 25 Jan 2022 11:12:27][login.py][line:195][INFO] 答案7：
+[Tue, 25 Jan 2022 11:12:27][login.py][line:194][INFO] 必填问题8：你目前是否被隔离？
+[Tue, 25 Jan 2022 11:12:27][login.py][line:195][INFO] 答案8：
+[Tue, 25 Jan 2022 11:12:27][login.py][line:194][INFO] 必填问题9：近1个月是否去过重点疫区或接触过重点疫区人士？
+[Tue, 25 Jan 2022 11:12:27][login.py][line:195][INFO] 答案9：
+[Tue, 25 Jan 2022 11:12:27][login.py][line:194][INFO] 必填问题10：近1个月是否接触过确诊病例？
+[Tue, 25 Jan 2022 11:12:27][login.py][line:195][INFO] 答案10：
+[Tue, 25 Jan 2022 11:12:27][login.py][line:194][INFO] 必填问题11：近1个月是否接触过疑似病例？
+[Tue, 25 Jan 2022 11:12:27][login.py][line:195][INFO] 答案11：
+[Tue, 25 Jan 2022 11:12:27][login.py][line:194][INFO] 必填问题12：你今天的体温是多少？
+[Tue, 25 Jan 2022 11:12:27][login.py][line:195][INFO] 答案12：
+[Tue, 25 Jan 2022 11:12:27][login.py][line:194][INFO] 必填问题13：本人是否承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处 (必填)
+[Tue, 25 Jan 2022 11:12:27][login.py][line:195][INFO] 答案13：
+[Tue, 25 Jan 2022 11:12:27][login.py][line:344][INFO] 提交表单: 提交表单
+[Tue, 25 Jan 2022 11:12:27][login.py][line:351][DEBUG] 打卡失败,请重试
+[Tue, 25 Jan 2022 11:13:23][login.py][line:33][INFO] 登录: 正在初始化网络会话
+[Tue, 25 Jan 2022 11:13:23][login.py][line:57][INFO] 加密: 开始加密
+[Tue, 25 Jan 2022 11:13:23][login.py][line:60][INFO] 加密: 成功加密
+[Tue, 25 Jan 2022 11:13:23][login.py][line:61][INFO] 登录: 成功初始化网络会话
+[Tue, 25 Jan 2022 11:13:23][login.py][line:361][INFO] 登录: 开始准备登录
+[Tue, 25 Jan 2022 11:13:23][login.py][line:99][INFO] 登录: 正在获取用户配置信息
+[Tue, 25 Jan 2022 11:13:23][login.py][line:100][INFO] 登录: 成功获取用户配置信息
+[Tue, 25 Jan 2022 11:13:23][login.py][line:102][INFO] 登录: 正在获取参数
+[Tue, 25 Jan 2022 11:13:23][login.py][line:106][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:13:23][login.py][line:107][INFO] 登录: 正在获取新的参数
+[Tue, 25 Jan 2022 11:13:23][login.py][line:110][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:13:23][login.py][line:120][INFO] 登录: 正在登录
+[Tue, 25 Jan 2022 11:13:24][login.py][line:124][INFO] 登录成功
+[Tue, 25 Jan 2022 11:13:24][login.py][line:331][INFO] 提交表单: 获取最新表单
+[Tue, 25 Jan 2022 11:13:24][login.py][line:336][INFO] 提交表单: 获取学校Taskid
+[Tue, 25 Jan 2022 11:13:24][login.py][line:339][INFO] 提交表单: 获取表单
+[Tue, 25 Jan 2022 11:13:24][login.py][line:342][INFO] 填写新表单
+[Tue, 25 Jan 2022 11:13:24][login.py][line:195][INFO] 必填问题1：你的学生类别？
+[Tue, 25 Jan 2022 11:13:24][login.py][line:196][INFO] 答案1：
+[Tue, 25 Jan 2022 11:13:24][login.py][line:195][INFO] 必填问题2：你属于下列哪个校区学生?
+[Tue, 25 Jan 2022 11:13:24][login.py][line:196][INFO] 答案2：
+[Tue, 25 Jan 2022 11:13:24][login.py][line:195][INFO] 必填问题3：你目前是否在校？
+[Tue, 25 Jan 2022 11:13:24][login.py][line:196][INFO] 答案3：
+[Tue, 25 Jan 2022 11:13:24][login.py][line:195][INFO] 必填问题4：你目前的居住地区是否为疫情中高风险地区？
+[Tue, 25 Jan 2022 11:13:24][login.py][line:196][INFO] 答案4：
+[Tue, 25 Jan 2022 11:13:24][login.py][line:195][INFO] 必填问题5：你目前是否有疑似/确诊新冠肺炎？
+[Tue, 25 Jan 2022 11:13:24][login.py][line:196][INFO] 答案5：
+[Tue, 25 Jan 2022 11:13:24][login.py][line:195][INFO] 必填问题6：你目前是否有发热、咳嗽等症状?
+[Tue, 25 Jan 2022 11:13:24][login.py][line:196][INFO] 答案6：
+[Tue, 25 Jan 2022 11:13:24][login.py][line:195][INFO] 必填问题7：你目前是否已就诊或正在住院?
+[Tue, 25 Jan 2022 11:13:24][login.py][line:196][INFO] 答案7：
+[Tue, 25 Jan 2022 11:13:24][login.py][line:195][INFO] 必填问题8：你目前是否被隔离？
+[Tue, 25 Jan 2022 11:13:24][login.py][line:196][INFO] 答案8：
+[Tue, 25 Jan 2022 11:13:24][login.py][line:195][INFO] 必填问题9：近1个月是否去过重点疫区或接触过重点疫区人士？
+[Tue, 25 Jan 2022 11:13:24][login.py][line:196][INFO] 答案9：
+[Tue, 25 Jan 2022 11:13:24][login.py][line:195][INFO] 必填问题10：近1个月是否接触过确诊病例？
+[Tue, 25 Jan 2022 11:13:24][login.py][line:196][INFO] 答案10：
+[Tue, 25 Jan 2022 11:13:24][login.py][line:195][INFO] 必填问题11：近1个月是否接触过疑似病例？
+[Tue, 25 Jan 2022 11:13:24][login.py][line:196][INFO] 答案11：
+[Tue, 25 Jan 2022 11:13:24][login.py][line:195][INFO] 必填问题12：你今天的体温是多少？
+[Tue, 25 Jan 2022 11:13:24][login.py][line:196][INFO] 答案12：
+[Tue, 25 Jan 2022 11:13:24][login.py][line:195][INFO] 必填问题13：本人是否承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处 (必填)
+[Tue, 25 Jan 2022 11:13:24][login.py][line:196][INFO] 答案13：
+[Tue, 25 Jan 2022 11:13:24][login.py][line:345][INFO] 提交表单: 提交表单
+[Tue, 25 Jan 2022 11:13:25][login.py][line:352][DEBUG] 打卡失败,请重试
+[Tue, 25 Jan 2022 11:14:15][login.py][line:33][INFO] 登录: 正在初始化网络会话
+[Tue, 25 Jan 2022 11:14:15][login.py][line:57][INFO] 加密: 开始加密
+[Tue, 25 Jan 2022 11:14:15][login.py][line:60][INFO] 加密: 成功加密
+[Tue, 25 Jan 2022 11:14:15][login.py][line:61][INFO] 登录: 成功初始化网络会话
+[Tue, 25 Jan 2022 11:14:15][login.py][line:362][INFO] 登录: 开始准备登录
+[Tue, 25 Jan 2022 11:14:15][login.py][line:99][INFO] 登录: 正在获取用户配置信息
+[Tue, 25 Jan 2022 11:14:15][login.py][line:100][INFO] 登录: 成功获取用户配置信息
+[Tue, 25 Jan 2022 11:14:15][login.py][line:102][INFO] 登录: 正在获取参数
+[Tue, 25 Jan 2022 11:14:16][login.py][line:106][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:14:16][login.py][line:107][INFO] 登录: 正在获取新的参数
+[Tue, 25 Jan 2022 11:14:16][login.py][line:110][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:14:16][login.py][line:120][INFO] 登录: 正在登录
+[Tue, 25 Jan 2022 11:14:16][login.py][line:124][INFO] 登录成功
+[Tue, 25 Jan 2022 11:14:16][login.py][line:332][INFO] 提交表单: 获取最新表单
+[Tue, 25 Jan 2022 11:14:16][login.py][line:337][INFO] 提交表单: 获取学校Taskid
+[Tue, 25 Jan 2022 11:14:16][login.py][line:340][INFO] 提交表单: 获取表单
+[Tue, 25 Jan 2022 11:14:17][login.py][line:343][INFO] 填写新表单
+[Tue, 25 Jan 2022 11:14:17][login.py][line:196][INFO] 必填问题1：你的学生类别？
+[Tue, 25 Jan 2022 11:14:17][login.py][line:197][INFO] 答案1：
+[Tue, 25 Jan 2022 11:14:17][login.py][line:196][INFO] 必填问题2：你属于下列哪个校区学生?
+[Tue, 25 Jan 2022 11:14:17][login.py][line:197][INFO] 答案2：
+[Tue, 25 Jan 2022 11:14:17][login.py][line:196][INFO] 必填问题3：你目前是否在校？
+[Tue, 25 Jan 2022 11:14:17][login.py][line:197][INFO] 答案3：
+[Tue, 25 Jan 2022 11:14:17][login.py][line:196][INFO] 必填问题4：你目前的居住地区是否为疫情中高风险地区？
+[Tue, 25 Jan 2022 11:14:17][login.py][line:197][INFO] 答案4：
+[Tue, 25 Jan 2022 11:14:17][login.py][line:196][INFO] 必填问题5：你目前是否有疑似/确诊新冠肺炎？
+[Tue, 25 Jan 2022 11:14:17][login.py][line:197][INFO] 答案5：
+[Tue, 25 Jan 2022 11:14:17][login.py][line:196][INFO] 必填问题6：你目前是否有发热、咳嗽等症状?
+[Tue, 25 Jan 2022 11:14:17][login.py][line:197][INFO] 答案6：
+[Tue, 25 Jan 2022 11:14:17][login.py][line:196][INFO] 必填问题7：你目前是否已就诊或正在住院?
+[Tue, 25 Jan 2022 11:14:17][login.py][line:197][INFO] 答案7：
+[Tue, 25 Jan 2022 11:14:17][login.py][line:196][INFO] 必填问题8：你目前是否被隔离？
+[Tue, 25 Jan 2022 11:14:17][login.py][line:197][INFO] 答案8：
+[Tue, 25 Jan 2022 11:14:17][login.py][line:196][INFO] 必填问题9：近1个月是否去过重点疫区或接触过重点疫区人士？
+[Tue, 25 Jan 2022 11:14:17][login.py][line:197][INFO] 答案9：
+[Tue, 25 Jan 2022 11:14:17][login.py][line:196][INFO] 必填问题10：近1个月是否接触过确诊病例？
+[Tue, 25 Jan 2022 11:14:17][login.py][line:197][INFO] 答案10：
+[Tue, 25 Jan 2022 11:14:17][login.py][line:196][INFO] 必填问题11：近1个月是否接触过疑似病例？
+[Tue, 25 Jan 2022 11:14:17][login.py][line:197][INFO] 答案11：
+[Tue, 25 Jan 2022 11:14:17][login.py][line:196][INFO] 必填问题12：你今天的体温是多少？
+[Tue, 25 Jan 2022 11:14:17][login.py][line:197][INFO] 答案12：
+[Tue, 25 Jan 2022 11:14:17][login.py][line:196][INFO] 必填问题13：本人是否承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处 (必填)
+[Tue, 25 Jan 2022 11:14:17][login.py][line:197][INFO] 答案13：
+[Tue, 25 Jan 2022 11:14:17][login.py][line:346][INFO] 提交表单: 提交表单
+[Tue, 25 Jan 2022 11:14:17][login.py][line:353][DEBUG] 打卡失败,请重试
+[Tue, 25 Jan 2022 11:15:02][login.py][line:33][INFO] 登录: 正在初始化网络会话
+[Tue, 25 Jan 2022 11:15:02][login.py][line:57][INFO] 加密: 开始加密
+[Tue, 25 Jan 2022 11:15:02][login.py][line:60][INFO] 加密: 成功加密
+[Tue, 25 Jan 2022 11:15:02][login.py][line:61][INFO] 登录: 成功初始化网络会话
+[Tue, 25 Jan 2022 11:15:02][login.py][line:363][INFO] 登录: 开始准备登录
+[Tue, 25 Jan 2022 11:15:02][login.py][line:99][INFO] 登录: 正在获取用户配置信息
+[Tue, 25 Jan 2022 11:15:02][login.py][line:100][INFO] 登录: 成功获取用户配置信息
+[Tue, 25 Jan 2022 11:15:02][login.py][line:102][INFO] 登录: 正在获取参数
+[Tue, 25 Jan 2022 11:15:03][login.py][line:106][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:15:03][login.py][line:107][INFO] 登录: 正在获取新的参数
+[Tue, 25 Jan 2022 11:15:03][login.py][line:110][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:15:03][login.py][line:120][INFO] 登录: 正在登录
+[Tue, 25 Jan 2022 11:15:03][login.py][line:124][INFO] 登录成功
+[Tue, 25 Jan 2022 11:15:03][login.py][line:333][INFO] 提交表单: 获取最新表单
+[Tue, 25 Jan 2022 11:15:04][login.py][line:338][INFO] 提交表单: 获取学校Taskid
+[Tue, 25 Jan 2022 11:15:04][login.py][line:341][INFO] 提交表单: 获取表单
+[Tue, 25 Jan 2022 11:15:04][login.py][line:344][INFO] 填写新表单
+[Tue, 25 Jan 2022 11:15:04][login.py][line:197][INFO] 必填问题1：你的学生类别？
+[Tue, 25 Jan 2022 11:15:04][login.py][line:198][INFO] 答案1：
+[Tue, 25 Jan 2022 11:15:04][login.py][line:197][INFO] 必填问题2：你属于下列哪个校区学生?
+[Tue, 25 Jan 2022 11:15:04][login.py][line:198][INFO] 答案2：
+[Tue, 25 Jan 2022 11:15:04][login.py][line:197][INFO] 必填问题3：你目前是否在校？
+[Tue, 25 Jan 2022 11:15:04][login.py][line:198][INFO] 答案3：
+[Tue, 25 Jan 2022 11:15:04][login.py][line:197][INFO] 必填问题4：你目前的居住地区是否为疫情中高风险地区？
+[Tue, 25 Jan 2022 11:15:04][login.py][line:198][INFO] 答案4：
+[Tue, 25 Jan 2022 11:15:04][login.py][line:197][INFO] 必填问题5：你目前是否有疑似/确诊新冠肺炎？
+[Tue, 25 Jan 2022 11:15:04][login.py][line:198][INFO] 答案5：
+[Tue, 25 Jan 2022 11:15:04][login.py][line:197][INFO] 必填问题6：你目前是否有发热、咳嗽等症状?
+[Tue, 25 Jan 2022 11:15:04][login.py][line:198][INFO] 答案6：
+[Tue, 25 Jan 2022 11:15:04][login.py][line:197][INFO] 必填问题7：你目前是否已就诊或正在住院?
+[Tue, 25 Jan 2022 11:15:04][login.py][line:198][INFO] 答案7：
+[Tue, 25 Jan 2022 11:15:04][login.py][line:197][INFO] 必填问题8：你目前是否被隔离？
+[Tue, 25 Jan 2022 11:15:04][login.py][line:198][INFO] 答案8：
+[Tue, 25 Jan 2022 11:15:04][login.py][line:197][INFO] 必填问题9：近1个月是否去过重点疫区或接触过重点疫区人士？
+[Tue, 25 Jan 2022 11:15:04][login.py][line:198][INFO] 答案9：
+[Tue, 25 Jan 2022 11:15:04][login.py][line:197][INFO] 必填问题10：近1个月是否接触过确诊病例？
+[Tue, 25 Jan 2022 11:15:04][login.py][line:198][INFO] 答案10：
+[Tue, 25 Jan 2022 11:15:04][login.py][line:197][INFO] 必填问题11：近1个月是否接触过疑似病例？
+[Tue, 25 Jan 2022 11:15:04][login.py][line:198][INFO] 答案11：
+[Tue, 25 Jan 2022 11:15:04][login.py][line:197][INFO] 必填问题12：你今天的体温是多少？
+[Tue, 25 Jan 2022 11:15:04][login.py][line:198][INFO] 答案12：
+[Tue, 25 Jan 2022 11:15:04][login.py][line:197][INFO] 必填问题13：本人是否承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处 (必填)
+[Tue, 25 Jan 2022 11:15:04][login.py][line:198][INFO] 答案13：
+[Tue, 25 Jan 2022 11:15:04][login.py][line:347][INFO] 提交表单: 提交表单
+[Tue, 25 Jan 2022 11:15:04][login.py][line:354][DEBUG] 打卡失败,请重试
+[Tue, 25 Jan 2022 11:15:43][login.py][line:33][INFO] 登录: 正在初始化网络会话
+[Tue, 25 Jan 2022 11:15:43][login.py][line:57][INFO] 加密: 开始加密
+[Tue, 25 Jan 2022 11:15:43][login.py][line:60][INFO] 加密: 成功加密
+[Tue, 25 Jan 2022 11:15:43][login.py][line:61][INFO] 登录: 成功初始化网络会话
+[Tue, 25 Jan 2022 11:15:43][login.py][line:363][INFO] 登录: 开始准备登录
+[Tue, 25 Jan 2022 11:15:43][login.py][line:99][INFO] 登录: 正在获取用户配置信息
+[Tue, 25 Jan 2022 11:15:43][login.py][line:100][INFO] 登录: 成功获取用户配置信息
+[Tue, 25 Jan 2022 11:15:43][login.py][line:102][INFO] 登录: 正在获取参数
+[Tue, 25 Jan 2022 11:15:44][login.py][line:106][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:15:44][login.py][line:107][INFO] 登录: 正在获取新的参数
+[Tue, 25 Jan 2022 11:15:44][login.py][line:110][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:15:44][login.py][line:120][INFO] 登录: 正在登录
+[Tue, 25 Jan 2022 11:15:44][login.py][line:124][INFO] 登录成功
+[Tue, 25 Jan 2022 11:15:44][login.py][line:333][INFO] 提交表单: 获取最新表单
+[Tue, 25 Jan 2022 11:15:44][login.py][line:338][INFO] 提交表单: 获取学校Taskid
+[Tue, 25 Jan 2022 11:15:45][login.py][line:341][INFO] 提交表单: 获取表单
+[Tue, 25 Jan 2022 11:15:45][login.py][line:344][INFO] 填写新表单
+[Tue, 25 Jan 2022 11:15:45][login.py][line:197][INFO] 必填问题1：你的学生类别？
+[Tue, 25 Jan 2022 11:15:45][login.py][line:198][INFO] 答案1：
+[Tue, 25 Jan 2022 11:15:45][login.py][line:197][INFO] 必填问题2：你属于下列哪个校区学生?
+[Tue, 25 Jan 2022 11:15:45][login.py][line:198][INFO] 答案2：
+[Tue, 25 Jan 2022 11:15:45][login.py][line:197][INFO] 必填问题3：你目前是否在校？
+[Tue, 25 Jan 2022 11:15:45][login.py][line:198][INFO] 答案3：
+[Tue, 25 Jan 2022 11:15:45][login.py][line:197][INFO] 必填问题4：你目前的居住地区是否为疫情中高风险地区？
+[Tue, 25 Jan 2022 11:15:45][login.py][line:198][INFO] 答案4：
+[Tue, 25 Jan 2022 11:15:45][login.py][line:197][INFO] 必填问题5：你目前是否有疑似/确诊新冠肺炎？
+[Tue, 25 Jan 2022 11:15:45][login.py][line:198][INFO] 答案5：
+[Tue, 25 Jan 2022 11:15:45][login.py][line:197][INFO] 必填问题6：你目前是否有发热、咳嗽等症状?
+[Tue, 25 Jan 2022 11:15:45][login.py][line:198][INFO] 答案6：
+[Tue, 25 Jan 2022 11:15:45][login.py][line:197][INFO] 必填问题7：你目前是否已就诊或正在住院?
+[Tue, 25 Jan 2022 11:15:45][login.py][line:198][INFO] 答案7：
+[Tue, 25 Jan 2022 11:15:45][login.py][line:197][INFO] 必填问题8：你目前是否被隔离？
+[Tue, 25 Jan 2022 11:15:45][login.py][line:198][INFO] 答案8：
+[Tue, 25 Jan 2022 11:15:45][login.py][line:197][INFO] 必填问题9：近1个月是否去过重点疫区或接触过重点疫区人士？
+[Tue, 25 Jan 2022 11:15:45][login.py][line:198][INFO] 答案9：
+[Tue, 25 Jan 2022 11:15:45][login.py][line:197][INFO] 必填问题10：近1个月是否接触过确诊病例？
+[Tue, 25 Jan 2022 11:15:45][login.py][line:198][INFO] 答案10：
+[Tue, 25 Jan 2022 11:15:45][login.py][line:197][INFO] 必填问题11：近1个月是否接触过疑似病例？
+[Tue, 25 Jan 2022 11:15:45][login.py][line:198][INFO] 答案11：
+[Tue, 25 Jan 2022 11:15:45][login.py][line:197][INFO] 必填问题12：你今天的体温是多少？
+[Tue, 25 Jan 2022 11:15:45][login.py][line:198][INFO] 答案12：
+[Tue, 25 Jan 2022 11:15:45][login.py][line:197][INFO] 必填问题13：本人是否承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处 (必填)
+[Tue, 25 Jan 2022 11:15:45][login.py][line:198][INFO] 答案13：
+[Tue, 25 Jan 2022 11:15:45][login.py][line:347][INFO] 提交表单: 提交表单
+[Tue, 25 Jan 2022 11:15:45][login.py][line:354][DEBUG] 打卡失败,请重试
+[Tue, 25 Jan 2022 11:19:56][login.py][line:33][INFO] 登录: 正在初始化网络会话
+[Tue, 25 Jan 2022 11:19:56][login.py][line:57][INFO] 加密: 开始加密
+[Tue, 25 Jan 2022 11:19:56][login.py][line:60][INFO] 加密: 成功加密
+[Tue, 25 Jan 2022 11:19:56][login.py][line:61][INFO] 登录: 成功初始化网络会话
+[Tue, 25 Jan 2022 11:19:56][login.py][line:362][INFO] 登录: 开始准备登录
+[Tue, 25 Jan 2022 11:19:56][login.py][line:99][INFO] 登录: 正在获取用户配置信息
+[Tue, 25 Jan 2022 11:19:56][login.py][line:100][INFO] 登录: 成功获取用户配置信息
+[Tue, 25 Jan 2022 11:19:56][login.py][line:102][INFO] 登录: 正在获取参数
+[Tue, 25 Jan 2022 11:19:57][login.py][line:106][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:19:57][login.py][line:107][INFO] 登录: 正在获取新的参数
+[Tue, 25 Jan 2022 11:19:57][login.py][line:110][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:19:57][login.py][line:120][INFO] 登录: 正在登录
+[Tue, 25 Jan 2022 11:19:57][login.py][line:124][INFO] 登录成功
+[Tue, 25 Jan 2022 11:19:57][login.py][line:332][INFO] 提交表单: 获取最新表单
+[Tue, 25 Jan 2022 11:19:57][login.py][line:337][INFO] 提交表单: 获取学校Taskid
+[Tue, 25 Jan 2022 11:19:57][login.py][line:340][INFO] 提交表单: 获取表单
+[Tue, 25 Jan 2022 11:19:58][login.py][line:343][INFO] 填写新表单
+[Tue, 25 Jan 2022 11:19:58][login.py][line:196][INFO] 必填问题1：你的学生类别？
+[Tue, 25 Jan 2022 11:19:58][login.py][line:197][INFO] 答案1：
+[Tue, 25 Jan 2022 11:19:58][login.py][line:196][INFO] 必填问题2：你属于下列哪个校区学生?
+[Tue, 25 Jan 2022 11:19:58][login.py][line:197][INFO] 答案2：
+[Tue, 25 Jan 2022 11:19:58][login.py][line:196][INFO] 必填问题3：你目前是否在校？
+[Tue, 25 Jan 2022 11:19:58][login.py][line:197][INFO] 答案3：
+[Tue, 25 Jan 2022 11:19:58][login.py][line:196][INFO] 必填问题4：你目前的居住地区是否为疫情中高风险地区？
+[Tue, 25 Jan 2022 11:19:58][login.py][line:197][INFO] 答案4：
+[Tue, 25 Jan 2022 11:19:58][login.py][line:196][INFO] 必填问题5：你目前是否有疑似/确诊新冠肺炎？
+[Tue, 25 Jan 2022 11:19:58][login.py][line:197][INFO] 答案5：
+[Tue, 25 Jan 2022 11:19:58][login.py][line:196][INFO] 必填问题6：你目前是否有发热、咳嗽等症状?
+[Tue, 25 Jan 2022 11:19:58][login.py][line:197][INFO] 答案6：
+[Tue, 25 Jan 2022 11:19:58][login.py][line:196][INFO] 必填问题7：你目前是否已就诊或正在住院?
+[Tue, 25 Jan 2022 11:19:58][login.py][line:197][INFO] 答案7：
+[Tue, 25 Jan 2022 11:19:58][login.py][line:196][INFO] 必填问题8：你目前是否被隔离？
+[Tue, 25 Jan 2022 11:19:58][login.py][line:197][INFO] 答案8：
+[Tue, 25 Jan 2022 11:19:58][login.py][line:196][INFO] 必填问题9：近1个月是否去过重点疫区或接触过重点疫区人士？
+[Tue, 25 Jan 2022 11:19:58][login.py][line:197][INFO] 答案9：
+[Tue, 25 Jan 2022 11:19:58][login.py][line:196][INFO] 必填问题10：近1个月是否接触过确诊病例？
+[Tue, 25 Jan 2022 11:19:58][login.py][line:197][INFO] 答案10：
+[Tue, 25 Jan 2022 11:19:58][login.py][line:196][INFO] 必填问题11：近1个月是否接触过疑似病例？
+[Tue, 25 Jan 2022 11:19:58][login.py][line:197][INFO] 答案11：
+[Tue, 25 Jan 2022 11:19:58][login.py][line:196][INFO] 必填问题12：你今天的体温是多少？
+[Tue, 25 Jan 2022 11:19:58][login.py][line:197][INFO] 答案12：
+[Tue, 25 Jan 2022 11:19:58][login.py][line:196][INFO] 必填问题13：本人是否承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处 (必填)
+[Tue, 25 Jan 2022 11:19:58][login.py][line:197][INFO] 答案13：
+[Tue, 25 Jan 2022 11:19:58][login.py][line:346][INFO] 提交表单: 提交表单
+[Tue, 25 Jan 2022 11:19:58][login.py][line:353][DEBUG] 打卡失败,请重试
+[Tue, 25 Jan 2022 11:28:01][login.py][line:33][INFO] 登录: 正在初始化网络会话
+[Tue, 25 Jan 2022 11:28:01][login.py][line:57][INFO] 加密: 开始加密
+[Tue, 25 Jan 2022 11:28:01][login.py][line:60][INFO] 加密: 成功加密
+[Tue, 25 Jan 2022 11:28:01][login.py][line:61][INFO] 登录: 成功初始化网络会话
+[Tue, 25 Jan 2022 11:28:01][login.py][line:369][INFO] 登录: 开始准备登录
+[Tue, 25 Jan 2022 11:28:01][login.py][line:99][INFO] 登录: 正在获取用户配置信息
+[Tue, 25 Jan 2022 11:28:01][login.py][line:100][INFO] 登录: 成功获取用户配置信息
+[Tue, 25 Jan 2022 11:28:01][login.py][line:102][INFO] 登录: 正在获取参数
+[Tue, 25 Jan 2022 11:28:02][login.py][line:106][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:28:02][login.py][line:107][INFO] 登录: 正在获取新的参数
+[Tue, 25 Jan 2022 11:28:02][login.py][line:110][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:28:02][login.py][line:120][INFO] 登录: 正在登录
+[Tue, 25 Jan 2022 11:28:02][login.py][line:124][INFO] 登录成功
+[Tue, 25 Jan 2022 11:28:02][login.py][line:339][INFO] 提交表单: 获取最新表单
+[Tue, 25 Jan 2022 11:28:02][login.py][line:344][INFO] 提交表单: 获取学校Taskid
+[Tue, 25 Jan 2022 11:28:02][login.py][line:347][INFO] 提交表单: 获取表单
+[Tue, 25 Jan 2022 11:28:03][login.py][line:350][INFO] 填写新表单
+[Tue, 25 Jan 2022 11:28:03][login.py][line:196][INFO] 必填问题1：你的学生类别？
+[Tue, 25 Jan 2022 11:28:03][login.py][line:197][INFO] 答案1：
+[Tue, 25 Jan 2022 11:28:03][login.py][line:196][INFO] 必填问题2：你属于下列哪个校区学生?
+[Tue, 25 Jan 2022 11:28:03][login.py][line:197][INFO] 答案2：
+[Tue, 25 Jan 2022 11:28:03][login.py][line:196][INFO] 必填问题3：你目前是否在校？
+[Tue, 25 Jan 2022 11:28:03][login.py][line:197][INFO] 答案3：
+[Tue, 25 Jan 2022 11:28:03][login.py][line:196][INFO] 必填问题4：你目前的居住地区是否为疫情中高风险地区？
+[Tue, 25 Jan 2022 11:28:03][login.py][line:197][INFO] 答案4：
+[Tue, 25 Jan 2022 11:28:03][login.py][line:196][INFO] 必填问题5：你目前是否有疑似/确诊新冠肺炎？
+[Tue, 25 Jan 2022 11:28:03][login.py][line:197][INFO] 答案5：
+[Tue, 25 Jan 2022 11:28:03][login.py][line:196][INFO] 必填问题6：你目前是否有发热、咳嗽等症状?
+[Tue, 25 Jan 2022 11:28:03][login.py][line:197][INFO] 答案6：
+[Tue, 25 Jan 2022 11:28:03][login.py][line:196][INFO] 必填问题7：你目前是否已就诊或正在住院?
+[Tue, 25 Jan 2022 11:28:03][login.py][line:197][INFO] 答案7：
+[Tue, 25 Jan 2022 11:28:03][login.py][line:196][INFO] 必填问题8：你目前是否被隔离？
+[Tue, 25 Jan 2022 11:28:03][login.py][line:197][INFO] 答案8：
+[Tue, 25 Jan 2022 11:28:03][login.py][line:196][INFO] 必填问题9：近1个月是否去过重点疫区或接触过重点疫区人士？
+[Tue, 25 Jan 2022 11:28:03][login.py][line:197][INFO] 答案9：
+[Tue, 25 Jan 2022 11:28:03][login.py][line:196][INFO] 必填问题10：近1个月是否接触过确诊病例？
+[Tue, 25 Jan 2022 11:28:03][login.py][line:197][INFO] 答案10：
+[Tue, 25 Jan 2022 11:28:03][login.py][line:196][INFO] 必填问题11：近1个月是否接触过疑似病例？
+[Tue, 25 Jan 2022 11:28:03][login.py][line:197][INFO] 答案11：
+[Tue, 25 Jan 2022 11:28:03][login.py][line:196][INFO] 必填问题12：你今天的体温是多少？
+[Tue, 25 Jan 2022 11:28:03][login.py][line:197][INFO] 答案12：
+[Tue, 25 Jan 2022 11:28:03][login.py][line:196][INFO] 必填问题13：本人是否承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处 (必填)
+[Tue, 25 Jan 2022 11:28:03][login.py][line:197][INFO] 答案13：
+[Tue, 25 Jan 2022 11:28:03][login.py][line:353][INFO] 提交表单: 提交表单
+[Tue, 25 Jan 2022 11:28:03][login.py][line:357][INFO] 打卡成功
+[Tue, 25 Jan 2022 11:41:53][login.py][line:33][INFO] 登录: 正在初始化网络会话
+[Tue, 25 Jan 2022 11:41:53][login.py][line:57][INFO] 加密: 开始加密
+[Tue, 25 Jan 2022 11:41:53][login.py][line:60][INFO] 加密: 成功加密
+[Tue, 25 Jan 2022 11:41:53][login.py][line:61][INFO] 登录: 成功初始化网络会话
+[Tue, 25 Jan 2022 11:41:53][login.py][line:365][INFO] 登录: 开始准备登录
+[Tue, 25 Jan 2022 11:41:53][login.py][line:99][INFO] 登录: 正在获取用户配置信息
+[Tue, 25 Jan 2022 11:41:53][login.py][line:100][INFO] 登录: 成功获取用户配置信息
+[Tue, 25 Jan 2022 11:41:53][login.py][line:102][INFO] 登录: 正在获取参数
+[Tue, 25 Jan 2022 11:41:54][login.py][line:106][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:41:54][login.py][line:107][INFO] 登录: 正在获取新的参数
+[Tue, 25 Jan 2022 11:41:54][login.py][line:110][INFO] 登录: 参数获取成功
+[Tue, 25 Jan 2022 11:41:54][login.py][line:120][INFO] 登录: 正在登录
+[Tue, 25 Jan 2022 11:41:55][login.py][line:124][INFO] 登录成功
+[Tue, 25 Jan 2022 11:41:55][login.py][line:336][INFO] 提交表单: 获取最新表单
+[Tue, 25 Jan 2022 11:41:55][login.py][line:341][INFO] 提交表单: 获取学校Taskid
+[Tue, 25 Jan 2022 11:41:55][login.py][line:344][INFO] 提交表单: 获取表单
+[Tue, 25 Jan 2022 11:41:55][login.py][line:347][INFO] 填写新表单
+[Tue, 25 Jan 2022 11:41:55][login.py][line:194][INFO] 必填问题1：你的学生类别？
+[Tue, 25 Jan 2022 11:41:55][login.py][line:195][INFO] 答案1：
+[Tue, 25 Jan 2022 11:41:55][login.py][line:194][INFO] 必填问题2：你属于下列哪个校区学生?
+[Tue, 25 Jan 2022 11:41:55][login.py][line:195][INFO] 答案2：
+[Tue, 25 Jan 2022 11:41:55][login.py][line:194][INFO] 必填问题3：你目前是否在校？
+[Tue, 25 Jan 2022 11:41:55][login.py][line:195][INFO] 答案3：
+[Tue, 25 Jan 2022 11:41:55][login.py][line:194][INFO] 必填问题4：你目前的居住地区是否为疫情中高风险地区？
+[Tue, 25 Jan 2022 11:41:55][login.py][line:195][INFO] 答案4：
+[Tue, 25 Jan 2022 11:41:55][login.py][line:194][INFO] 必填问题5：你目前是否有疑似/确诊新冠肺炎？
+[Tue, 25 Jan 2022 11:41:55][login.py][line:195][INFO] 答案5：
+[Tue, 25 Jan 2022 11:41:55][login.py][line:194][INFO] 必填问题6：你目前是否有发热、咳嗽等症状?
+[Tue, 25 Jan 2022 11:41:55][login.py][line:195][INFO] 答案6：
+[Tue, 25 Jan 2022 11:41:55][login.py][line:194][INFO] 必填问题7：你目前是否已就诊或正在住院?
+[Tue, 25 Jan 2022 11:41:55][login.py][line:195][INFO] 答案7：
+[Tue, 25 Jan 2022 11:41:55][login.py][line:194][INFO] 必填问题8：你目前是否被隔离？
+[Tue, 25 Jan 2022 11:41:55][login.py][line:195][INFO] 答案8：
+[Tue, 25 Jan 2022 11:41:55][login.py][line:194][INFO] 必填问题9：近1个月是否去过重点疫区或接触过重点疫区人士？
+[Tue, 25 Jan 2022 11:41:55][login.py][line:195][INFO] 答案9：
+[Tue, 25 Jan 2022 11:41:55][login.py][line:194][INFO] 必填问题10：近1个月是否接触过确诊病例？
+[Tue, 25 Jan 2022 11:41:55][login.py][line:195][INFO] 答案10：
+[Tue, 25 Jan 2022 11:41:55][login.py][line:194][INFO] 必填问题11：近1个月是否接触过疑似病例？
+[Tue, 25 Jan 2022 11:41:55][login.py][line:195][INFO] 答案11：
+[Tue, 25 Jan 2022 11:41:55][login.py][line:194][INFO] 必填问题12：你今天的体温是多少？
+[Tue, 25 Jan 2022 11:41:55][login.py][line:195][INFO] 答案12：
+[Tue, 25 Jan 2022 11:41:55][login.py][line:194][INFO] 必填问题13：本人是否承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处 (必填)
+[Tue, 25 Jan 2022 11:41:55][login.py][line:195][INFO] 答案13：
+[Tue, 25 Jan 2022 11:41:55][login.py][line:349][INFO] 提交表单: 提交表单
+[Tue, 25 Jan 2022 11:41:55][login.py][line:353][INFO] 打卡成功

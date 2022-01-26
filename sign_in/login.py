@@ -14,7 +14,7 @@ import pyDes
 import requests
 from Crypto.Cipher import AES
 
-from Config import logger
+# from Config import logger
 os.environ['NO_PROXY'] = 'campusphere.net'
 with open('config/config.json', 'r', encoding='utf-8') as f:
     dc_form = json.load(f)['data']['form']

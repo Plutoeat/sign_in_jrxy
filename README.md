@@ -78,7 +78,7 @@
 
 [点击打开阿里云函数](https://www.aliyun.com/search?spm=5176.19720258.J_8058803260.14.54212c4aoGhn1M&scene=all&k=%E5%87%BD%E6%95%B0%E8%AE%A1%E7%AE%97)，点击免费开通
 
-<img src="\Images\03.png" style="zoom:33%;" />
+<img src="./Images/03.png" style="zoom:33%;" />
 
 #### 2.点击服务及函数，点击创建服务
 
@@ -168,7 +168,7 @@ sudo pip3 install -r requirements.txt -t 地址
 
 显示提交成功
 
-<img src="./Images/result.png" style="zoom:33%;" />
+<img src="./Images/result.jpg" style="zoom:33%;" />
 
 ## 广告
 

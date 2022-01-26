@@ -45,6 +45,7 @@ if __name__ == '__main__':
         flag+=1
     config = {
         "data": {
+            "send_msg": False,
             "getSchoolId": {
                 "url": "https://static.campushoy.com/apicache/tenantListSort",
                 "sectionName": "{}".format(fs),

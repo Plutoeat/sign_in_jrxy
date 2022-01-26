@@ -13,6 +13,7 @@ import oss2
 import pyDes
 import requests
 from Crypto.Cipher import AES
+from send_msg.send_wechat import send
 
 # from Config import logger
 os.environ['NO_PROXY'] = 'campusphere.net'
@@ -68,8 +69,9 @@ class Login:
             ret = k.encrypt(text)
             return base64.b64encode(ret).decode()
         except:
-            # TODO send_email
-            # logger.debug('解密: 解密失败')
+            # send_email
+            send('提交表单失败','报错: 加密失败')
+            # logger.debug('加密: 加密失败')
             exit(-1)
 
     # 重写requests方法
@@ -90,7 +92,8 @@ class Login:
             else:
                 return res
         except:
-            # TODO send_email
+            # send_email
+            send('提交表单失败','报错: 登陆时获取链接失败')
             # logger.debug('登录: 获取链接失败')
             exit(-1)
 
@@ -155,7 +158,8 @@ class Login:
                 default = dc_form['defaults'][sort - 1]['default']
                 if formItem['title'] != default['title']:
                     # logger.debug('第%d个默认配置不正确，请检查' % sort)
-                    # TODO 发送邮件
+                    # 发送邮件
+                    send('提交表单失败','报错: 你的默认配置有误')
                     exit(-1)
                 # 文本直接赋值
                 if formItem['fieldType'] == '1':
@@ -349,12 +353,14 @@ class Login:
         # logger.info("提交表单: 提交表单")
         flag = self.submitform(formWid, collectWid, schoolTaskWid, new_form, instanceWid, address)
         if flag:
-            # todo 告知签到成功
+            # 告知签到成功
+            send('提交表单成功', '你的今日校园表单已提交')
             # logger.info('success')
             print('success')
         else:
-            # todo 告知签到失败
+            # 告知签到失败
             # logger.debug('failure')
+            send('提交表单失败','报错: 表单加密失败')
             print('failure')
             pass
 
@@ -367,7 +373,8 @@ def run():
     app = Login(data)
     # logger.info('登录: 开始准备登录')
     if not app.login():
-        # TODO send_email
+        # send_email
+        send('提交表单失败','报错: 您未能成功登录')
         # logger.debug('登录:登录失败！！！')
         exit(-1)
     app.autocomplete(address)

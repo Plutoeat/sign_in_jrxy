@@ -11,3 +11,5 @@ from sign_in.login import run
 def handler(*args):
     run()
     return "hello world!"
+
+handler()

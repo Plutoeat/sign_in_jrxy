@@ -8,6 +8,7 @@ from urllib.parse import urlparse
 import requests
 
 # from Config import logger
+import send_msg.send_wechat
 
 
 def getlogin(__school_id):
@@ -15,13 +16,15 @@ def getlogin(__school_id):
         data = {}
         res = requests.get('https://mobile.campushoy.com/v6/config/guest/tenant/info?ids={}'.format(__school_id))
         if res == "":
-            # TODO send_email
+            # send_email
+            send_msg.send_wechat.send('提交表单失败', '报错: 获取学校登录地址失败')
             # logger.debug("获取学校登录链接: 学校并没有申请入驻今日校园平台")
             exit(-1)
         data['ampUrl'] = res.json()['data'][0]['ampUrl']
         data['host'] = urlparse(data['ampUrl']).hostname
         if res.json()['data'][0]['joinType'] == 'NOTCLOUD':
-            # TODO 完善不开放云端系统登录 and send_email
+            # TODO 完善不开放云端系统登录
+            send_msg.send_wechat.send('提交表单失败', '报错: 暂不支持您的学校')
             # logger.debug('获取学校登录链接: 暂不支持不开放云端系统的学校使用，请自行尝试或联系作者尽快更新')
             exit(-1)
         if 'campusphere' in data['ampUrl'] or 'cpdaily' in data['ampUrl']:
@@ -34,11 +37,13 @@ def getlogin(__school_id):
             # })
             return data
         else:
-            # TODO 完善使用ampUrl2登录 and send_email
+            # TODO 完善使用ampUrl2登录
+            send_msg.send_wechat.send('提交表单失败', '报错: 暂不支持您的学校')
             # logger.debug('获取学校登录链接: 暂不支持暂不支持ampUrl2登录方式，请自行尝试或联系作者尽快更新')
             exit(-1)
     except requests.ConnectionError or requests.HTTPError:
-        # TODO 完善使用ampUrl2登录 and send_email
+        # TODO 完善使用ampUrl2登录
+        send_msg.send_wechat.send('提交表单失败', '报错: 接口调用次数过多或已失效')
         # logger.debug('获取学校登录链接: 调用接口过多或已失效')
         exit(-1)
 

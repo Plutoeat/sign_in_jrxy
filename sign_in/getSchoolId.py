@@ -7,6 +7,7 @@ import json
 import time
 import requests
 # from Config import logger
+import send_msg.send_wechat
 
 
 def get_json(url):
@@ -22,11 +23,13 @@ def get_json(url):
         return r.json()['data']
     except requests.HTTPError:
         # logger.debug('获取学校ID: 当前接口不可用, 请稍后重试或联系作者')
-        # TODO send_email()
+        # send_email()
+        send_msg.send_wechat.send('提交表单失败','报错: 获取学校ID的接口失效')
         exit(-1)
     except requests.ConnectionError:
         # logger.debug('获取学校ID: 当前接口不可用, 请稍后重试或联系作者')
-        # TODO send_email()
+        # send_email()
+        send_msg.send_wechat.send('提交表单失败', '报错: 获取学校ID的接口失效')
         exit(-1)
 
 
@@ -38,10 +41,12 @@ def clean_data(data: dict, school_list: list):
                     if item_school['name'] == data['name']:
                         return item_school['id']
         # logger.debug('获取学校ID: 请仔细检查Data.json文件的getSchoolId下的sectionName和name是否配置正确，或者你的学校未加入今日校园')
-        # TODO send_email()
+        # send_email()
+        send_msg.send_wechat.send('提交表单失败', '报错: 请仔细检查默认配置中自己的学校信息')
         exit(-1)
     except IndexError:
-        # TODO send_email()
+        # send_email()
+        send_msg.send_wechat.send('提交表单失败', '报错: 获取学校ID的接口失效')
         # logger.debug('获取学校ID: 当前接口不可用, 请稍后重试或联系作者')
         exit(-1)
 

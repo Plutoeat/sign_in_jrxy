@@ -30,7 +30,7 @@ lat = user['lat']
 class Login:
     def __init__(self, data, charset='utf-8'):
         # 这key应该是逆向出来的
-        logger.info('登录: 正在初始化网络会话')
+        # logger.info('登录: 正在初始化网络会话')
         self.key = "XCE927=="
         self.bodyString_key = b"SASEoK4Pa5d4SssO"
         self.sign_key="SASEoK4Pa5d4SssO"
@@ -54,11 +54,11 @@ class Login:
             "systemVersion": "初号机",
             "lat": lat,
         }
-        logger.info('加密: 开始加密')
+        # logger.info('加密: 开始加密')
         self.session.headers.update(
             {"Cpdaily-Extension": self.encrypt(json.dumps(extension))})
-        logger.info('加密: 成功加密')
-        logger.info('登录: 成功初始化网络会话')
+        # logger.info('加密: 成功加密')
+        # logger.info('登录: 成功初始化网络会话')
 
     # 加密
     def encrypt(self, text):
@@ -69,7 +69,7 @@ class Login:
             return base64.b64encode(ret).decode()
         except:
             # TODO send_email
-            logger.debug('解密: 解密失败')
+            # logger.debug('解密: 解密失败')
             exit(-1)
 
     # 重写requests方法
@@ -91,23 +91,23 @@ class Login:
                 return res
         except:
             # TODO send_email
-            logger.debug('登录: 获取链接失败')
+            # logger.debug('登录: 获取链接失败')
             exit(-1)
 
     # 登录
     def login(self, captcha=""):
-        logger.info("登录: 正在获取用户配置信息")
-        logger.info("登录: 成功获取用户配置信息")
+        # logger.info("登录: 正在获取用户配置信息")
+        # logger.info("登录: 成功获取用户配置信息")
         self.session.headers.update({"X-Requested-With": "XMLHttpRequest"})
-        logger.info("登录: 正在获取参数")
+        # logger.info("登录: 正在获取参数")
         res1 = self.session.get(
             "https://{host}/iap/login?service=https://{host}/portal/login".format(host=self.host)).url
         lt = res1[res1.find("=") + 1:]
-        logger.info("登录: 参数获取成功")
-        logger.info("登录: 正在获取新的参数")
+        # logger.info("登录: 参数获取成功")
+        # logger.info("登录: 正在获取新的参数")
         res = self.request("https://{host}/iap/security/lt", "lt={lt}".format(lt=lt), True, False)
         lt = res["result"]["_lt"]
-        logger.info("登录: 参数获取成功")
+        # logger.info("登录: 参数获取成功")
         data = {
             "username": username,
             "password": password,
@@ -117,11 +117,11 @@ class Login:
             "dllt": "",
             "mobile": ""
         }
-        logger.info("登录: 正在登录")
+        # logger.info("登录: 正在登录")
         res = self.request("https://{host}/iap/doLogin", data, True, False)
         if res["resultCode"] == "REDIRECT":
             self.session.get(res["url"])
-            logger.info('登录成功')
+            # logger.info('登录成功')
             return True
         else:
             return False
@@ -154,7 +154,7 @@ class Login:
             if formItem['isRequired'] == 1:
                 default = dc_form['defaults'][sort - 1]['default']
                 if formItem['title'] != default['title']:
-                    logger.debug('第%d个默认配置不正确，请检查' % sort)
+                    # logger.debug('第%d个默认配置不正确，请检查' % sort)
                     # TODO 发送邮件
                     exit(-1)
                 # 文本直接赋值
@@ -174,7 +174,7 @@ class Login:
                             formItem['fieldItems'].remove(fieldItems[i])
                 # 多选需要分割默认选项值，并且删掉无用的其他选项
                 if formItem['fieldType'] == '3':
-                    logger.INFO('作者没有遇见过第三种fieldType,支持可能并不友好')
+                    # logger.INFO('作者没有遇见过第三种fieldType,支持可能并不友好')
                     fieldItems = formItem['fieldItems']
                     defaultValues = default['value'].split(',')
                     for i in range(0, len(fieldItems))[::-1]:
@@ -188,11 +188,11 @@ class Login:
                             del fieldItems[i]
                 # 图片需要上传到阿里云oss
                 if formItem['fieldType'] == '4':
-                    logger.INFO('作者没有遇见过第四种fieldType,支持可能并不友好')
+                    # logger.INFO('作者没有遇见过第四种fieldType,支持可能并不友好')
                     fileName = self.uploadpicture(default['value'])
                     formItem['value'] = self.getpictureurl(fileName)
-                logger.info('必填问题%d：' % sort + formItem['title'])
-                logger.info('答案%d：' % sort + formItem['value'])
+                # logger.info('必填问题%d：' % sort + formItem['title'])
+                # logger.info('答案%d：' % sort + formItem['value'])
                 sort += 1
             else:
                 if formItem['fieldType'] == '2':
@@ -333,27 +333,30 @@ class Login:
         return False
 
     def autocomplete(self, address):
-        logger.info('提交表单: 获取最新表单')
+        # logger.info('提交表单: 获取最新表单')
         collectList = self.getcollectorlist()
         collectWid = collectList[0]['wid']
         formWid = collectList[0]['formWid']
         instanceWid = collectList[0]['instanceWid']
-        logger.info('提交表单: 获取学校Taskid')
+        # logger.info('提交表单: 获取学校Taskid')
         detailcollector = self.getdetailcollector(data={"collectorWid": collectWid, "instanceWid": instanceWid})
         schoolTaskWid = detailcollector['datas']['collector']['schoolTaskWid']
-        logger.info('提交表单: 获取表单')
+        # logger.info('提交表单: 获取表单')
         form = self.queryform(
             data={"pageSize": "9999", "pageNumber": "1", "formWid": formWid, "collectorWid": collectWid, "instanceWid": instanceWid})
-        logger.info('填写新表单')
+        # logger.info('填写新表单')
         new_form = self.fillform(form)
-        logger.info("提交表单: 提交表单")
+        # logger.info("提交表单: 提交表单")
         flag = self.submitform(formWid, collectWid, schoolTaskWid, new_form, instanceWid, address)
         if flag:
             # todo 告知签到成功
-            logger.info('打卡成功')
+            # logger.info('success')
+            print('success')
         else:
             # todo 告知签到失败
-            logger.debug('打卡失败,请重试')
+            # logger.debug('failure')
+            print('failure')
+            pass
 
 
 def run():
@@ -362,10 +365,10 @@ def run():
     data = run02()
     # data = {'ampUrl': 'https://dlu.campusphere.net/wec-portal-mobile/client', 'host': 'dlu.campusphere.net'}
     app = Login(data)
-    logger.info('登录: 开始准备登录')
+    # logger.info('登录: 开始准备登录')
     if not app.login():
         # TODO send_email
-        logger.debug('登录:登录失败！！！')
+        # logger.debug('登录:登录失败！！！')
         exit(-1)
     app.autocomplete(address)
 

@@ -5,20 +5,23 @@
 # @version  : 1.0
 import json
 import os
-if not os.path.exists(os.getcwd()+'\\config'):
-    os.mkdir(os.getcwd()+'\\config')
-if not os.path.exists(os.getcwd()+'\\log'):
-    os.mkdir(os.getcwd()+'\\log')
-if not os.path.isfile(os.getcwd()+'\\log\\jrxy.log'):
-    with open(os.getcwd()+'\\log\\jrxy.log', 'w', encoding='utf-8') as f:
+import sys
+import codecs
+
+
+sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
+if not os.path.exists(os.getcwd()+'/config'):
+    os.mkdir(os.getcwd()+'/config')
+if not os.path.exists(os.getcwd()+'/log'):
+    os.mkdir(os.getcwd()+'/log')
+if not os.path.isfile(os.getcwd()+'/log/jrxy.log'):
+    with open(os.getcwd()+'/log/jrxy.log', 'w', encoding='utf-8') as f:
         f.write('# @author   : GaiusPluto')
 
 
 if __name__ == '__main__':
     fs = input('请输入你大学的首字母: ').upper()
-    print(fs)
     school_name = input('请输入你大学名字: ')
-    print(school_name)
     username = input('请输入你的学号(仅支持学号): ')
     password = input('请输入你的密码: ')
     lon = input('请输入你所在地的经度: ')
@@ -63,4 +66,4 @@ if __name__ == '__main__':
             }
         }
     }
-    json.dump(config, open(os.getcwd()+'\\conf\\config.json', 'w', encoding='utf-8'))
+    json.dump(config, open(os.getcwd()+'/config/config.json', 'w', encoding='utf-8'))

@@ -8,5 +8,6 @@
 # @email    : spaceprivate@163.com
 
 from sign_in.login import run
-if __name__ == '__main__':
+def handler(*args):
     run()
+    return "hello world!"

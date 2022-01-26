@@ -1,2 +1,2 @@
 cd "此处填写你的项目绝对路径，最好全英文路径"
-python main.py
+python index.py handler
